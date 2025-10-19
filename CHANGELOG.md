@@ -1,9 +1,11 @@
-0.1.1 (Feb 1, 2010)
+## 0.1.1 (Feb 1, 2010)
+
 * Given the warden API was updated, the redirect! method would not work
 without invoking a throw(:warden) [contributor: eoin]
 
 
-* 0.1.0 (Jan 9, 2010) Lets stay up to date with josevalim's work
+## 0.1.0 (Jan 9, 2010) Lets stay up to date with josevalim's work
+
 * Renaming the warden_oauth/manager.rb to warden_oauth/config_extension.rb,
 given that the Warden::Manager is not the given instance on the
 Warden::Manager block anymore
@@ -14,10 +16,11 @@ first request to the Rack middleware.
 being used)
 * Update of the README
 
+## 0.0.2 (Oct 1, 2009) Keep the manager out of the business of strategies
 
-* 0.0.2 (Oct 1, 2009) Keep the manager out of the business of strategies
 * Removing the access_token_user_finder from Warden::Manager and adding it to
 the Warden::StrategyBuilder module
 
-* 0.0.1 (Sep 16, 2009) The beginning of easy OAuth for Warden
+## 0.0.1 (Sep 16, 2009) The beginning of easy OAuth for Warden
+
 * Adding the initial implementation of the warden_oauth gem
