@@ -45,6 +45,16 @@ describe Warden::Config do
         end.should_not raise_error(NameError)
       end
 
+      it "should redact consumer_secret in inspect" do
+        @config.oauth(:service) do |service|
+          service.consumer_key "ABC"
+          service.consumer_secret "123"
+        end
+
+        Warden::OAuth::Strategy::Service::CONFIG.inspect.should include("@consumer_secret=[FILTERED]")
+        Warden::OAuth::Strategy::Service::CONFIG.inspect.should_not include("123")
+      end
+
     end
 
   end

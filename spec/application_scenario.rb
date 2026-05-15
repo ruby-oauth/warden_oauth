@@ -21,7 +21,7 @@ class ErrorApp
 end
 
 $app = Rack::Builder.new do
-  use Rack::Session::Cookie
+  use Rack::Session::Cookie, :secret => "warden-oauth-test-secret-warden-oauth-test-secret-warden-oauth-test-secret"
   use Warden::Manager do |manager|
     manager.oauth(:example) do |example|
       example.consumer_key "aCOTnTeKniyifcwwF3Mo"
@@ -33,4 +33,3 @@ $app = Rack::Builder.new do
   end
   run ClientApp
 end if $app.nil?
-

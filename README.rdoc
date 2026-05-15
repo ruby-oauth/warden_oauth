@@ -66,9 +66,13 @@ warden rack middleware, ergo, it won't work as expected.
 
 If you want to know how to make a twitter authentication client, check examples/twitter/application.rb
 
+== Security
+
+Please see SECURITY.md for vulnerability reporting instructions and IRP.md for maintainer incident-response process.
+
 == Note on Patches/Pull Requests
 
-For any error send an email to: romanandreg [at] gmail [dot] com
+For general project issues, use the normal repository collaboration channels. For security-sensitive reports, follow SECURITY.md instead of opening a public issue.
 
 == Copyright
 

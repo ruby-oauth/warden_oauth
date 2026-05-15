@@ -19,8 +19,8 @@ describe Warden::OAuth::Strategy do
     end
 
     it "should create a new instance that extends from Warden::OAuth::Strategy" do
-      Warden::OAuth::Strategy.const_defined?("Service").should be_true
-      (Warden::OAuth::Strategy::Service < Warden::OAuth::Strategy).should be_true
+      Warden::OAuth::Strategy.const_defined?("Service").should be true
+      (Warden::OAuth::Strategy::Service < Warden::OAuth::Strategy).should be true
     end
 
     it "should register the oauth service key on the Warden strategies with `_oauth` appended" do

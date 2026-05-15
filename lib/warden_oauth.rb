@@ -1,6 +1,7 @@
 require "rack"
 require "warden"
 require "oauth"
+require "auth/sanitizer"
 
 module Warden
   module OAuth

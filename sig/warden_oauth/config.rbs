@@ -1,0 +1,16 @@
+module Warden
+  module OAuth
+    class Config
+      include Auth::Sanitizer::FilteredAttributes
+
+      attr_accessor provider_name: untyped
+      def consumer_key: (?untyped key) -> untyped
+      def consumer_key=: (untyped key) -> untyped
+      def consumer_secret: (?untyped secret) -> untyped
+      def consumer_secret=: (untyped secret) -> untyped
+      def options: (?untyped options) -> untyped
+      def options=: (untyped options) -> untyped
+      def check_requirements: () -> void
+    end
+  end
+end

@@ -1,5 +1,2 @@
 --colour
---format specdoc
---loadby mtime
---reverse
-
+--format documentation

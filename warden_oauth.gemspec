@@ -65,9 +65,16 @@ Gem::Specification.new do |s|
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+    rubygems_version = if Gem.respond_to?(:rubygems_version)
+      Gem.rubygems_version
+    else
+      Gem::Version.new(Gem::VERSION)
+    end
+
+    if rubygems_version >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<warden>, [">= 0.8.1"])
       s.add_runtime_dependency(%q<oauth>, [">= 0"])
+      s.add_runtime_dependency(%q<auth-sanitizer>, ["~> 0.1"])
       s.add_development_dependency(%q<rack-test>, [">= 0"])
       s.add_development_dependency(%q<fakeweb>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
@@ -75,6 +82,7 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<warden>, [">= 0.8.1"])
       s.add_dependency(%q<oauth>, [">= 0"])
+      s.add_dependency(%q<auth-sanitizer>, ["~> 0.1"])
       s.add_dependency(%q<rack-test>, [">= 0"])
       s.add_dependency(%q<fakeweb>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
@@ -83,6 +91,7 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<warden>, [">= 0.8.1"])
     s.add_dependency(%q<oauth>, [">= 0"])
+    s.add_dependency(%q<auth-sanitizer>, ["~> 0.1"])
     s.add_dependency(%q<rack-test>, [">= 0"])
     s.add_dependency(%q<fakeweb>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])

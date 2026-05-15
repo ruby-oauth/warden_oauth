@@ -1,11 +1,16 @@
 module Warden
   module OAuth
   
+    # Holds the configuration for a Warden OAuth provider integration.
     #
-    # Holds all the information of the OAuth service.
-    #
+    # Includes {Auth::Sanitizer::FilteredAttributes} so inspect output redacts
+    # the provider consumer secret while leaving other configuration visible.
     class Config
+      include Auth::Sanitizer::FilteredAttributes
+
+      # @return [String, Symbol, nil] logical provider name
       attr_accessor :provider_name
+      filtered_attributes :consumer_secret
       
       def consumer_key(key = nil)
         unless key.nil?
