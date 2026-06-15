@@ -3,7 +3,7 @@
 module Warden
   module OAuth
     module Version
-      VERSION = "0.1.1"
+      VERSION = "0.1.2"
     end
     VERSION = Version::VERSION # Traditional Constant Location
   end

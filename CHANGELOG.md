@@ -20,6 +20,25 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [0.1.2] - 2026-06-15
+
+- TAG: [v0.1.2][0.1.2t]
+- COVERAGE: 96.84% -- 153/158 lines in 9 files
+- BRANCH COVERAGE: 80.56% -- 29/36 branches in 9 files
+- 53.12% documented
+
+### Added
+
 - Added a modern `kettle-jem` development harness, including Bundler setup,
   Appraisals, modular Gemfiles, binstubs, RuboCop Gradual, SimpleCov coverage,
   YARD documentation generation, release/support scripts, and local `mise`
@@ -50,8 +69,6 @@ Please file a bug if you notice a violation of semantic versioning.
   `Warden::OAuth`, including README heading/badge, gemspec version loading,
   RBS signatures, and YARD docs.
 
-### Deprecated
-
 ### Removed
 
 - Removed the legacy `README.rdoc`, `LICENSE.txt`, and RSpec `spec.opts` files
@@ -64,30 +81,6 @@ Please file a bug if you notice a violation of semantic versioning.
 - Fixed test compatibility with modern Ruby by shimming `File.exists?` for
   `fakeweb` during specs.
 
-### Security
-
-## 0.1.1 (Feb 1, 2010)
-
-* Given the warden API was updated, the redirect! method would not work
-without invoking a throw(:warden) [contributor: eoin]
-
-## 0.1.0 (Jan 9, 2010) Lets stay up to date with josevalim's work
-
-* Renaming the warden_oauth/manager.rb to warden_oauth/config_extension.rb,
-given that the Warden::Manager is not the given instance on the
-Warden::Manager block anymore
-* Creating a new way to assign access_token_user_finders to the strategies,
-using the sole strategy had a drawback, the class was lazily created after the
-first request to the Rack middleware.
-* Added an example of a twitter client (given that's the more popular client
-being used)
-* Update of the README
-
-## 0.0.2 (Oct 1, 2009) Keep the manager out of the business of strategies
-
-* Removing the access_token_user_finder from Warden::Manager and adding it to
-the Warden::StrategyBuilder module
-
-## 0.0.1 (Sep 16, 2009) The beginning of easy OAuth for Warden
-
-* Adding the initial implementation of the warden_oauth gem
+[Unreleased]: https://github.com/ruby-oauth/warden_oauth/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/ruby-oauth/warden_oauth/compare/a38e5c5fb3d44936b48bb5e547ec7dd7f58530a3...v0.1.2
+[0.1.2t]: https://github.com/ruby-oauth/warden_oauth/releases/tag/v0.1.2

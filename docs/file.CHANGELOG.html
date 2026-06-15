@@ -70,7 +70,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 and <a href="https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html">yes</a>, platform and engine support are part of the <a href="https://github.com/semver/semver/issues/716#issuecomment-869336139">public API</a>.<br>
 Please file a bug if you notice a violation of semantic versioning.</p>
 
-<h2 id="unreleased">[Unreleased]</h2>
+<h2 id="unreleased"><a href="https://github.com/ruby-oauth/warden_oauth/compare/v0.1.2...HEAD">Unreleased</a></h2>
 
 <h3 id="added">Added</h3>
 
@@ -82,50 +82,75 @@ Please file a bug if you notice a violation of semantic versioning.</p>
 
 <h3 id="fixed">Fixed</h3>
 
-<ul>
-  <li>Corrected generated namespace references to use <code>Warden::OAuth</code>.</li>
-  <li>Corrected generated repository and funding links to use the <code>ruby-oauth</code> organization.</li>
-</ul>
-
 <h3 id="security">Security</h3>
 
-<h2 id="011-feb-1-2010">0.1.1 (Feb 1, 2010)</h2>
+<h2 id="012---2026-06-15">
+<a href="https://github.com/ruby-oauth/warden_oauth/compare/a38e5c5fb3d44936b48bb5e547ec7dd7f58530a3...v0.1.2">0.1.2</a> - 2026-06-15</h2>
 
 <ul>
-  <li>Given the warden API was updated, the redirect! method would not work<br>
-without invoking a throw(:warden) [contributor: eoin]</li>
+  <li>TAG: <a href="https://github.com/ruby-oauth/warden_oauth/releases/tag/v0.1.2">v0.1.2</a>
+</li>
+  <li>COVERAGE: 96.84% – 153/158 lines in 9 files</li>
+  <li>BRANCH COVERAGE: 80.56% – 29/36 branches in 9 files</li>
+  <li>53.12% documented</li>
 </ul>
 
-<h2 id="010-jan-9-2010-lets-stay-up-to-date-with-josevalims-work">0.1.0 (Jan 9, 2010) Lets stay up to date with josevalim’s work</h2>
+<h3 id="added-1">Added</h3>
 
 <ul>
-  <li>Renaming the warden_oauth/manager.rb to warden_oauth/config_extension.rb,<br>
-given that the Warden::Manager is not the given instance on the<br>
-Warden::Manager block anymore</li>
-  <li>Creating a new way to assign access_token_user_finders to the strategies,<br>
-using the sole strategy had a drawback, the class was lazily created after the<br>
-first request to the Rack middleware.</li>
-  <li>Added an example of a twitter client (given that’s the more popular client<br>
-being used)</li>
-  <li>Update of the README</li>
+  <li>Added a modern <code>kettle-jem</code> development harness, including Bundler setup,<br>
+Appraisals, modular Gemfiles, binstubs, RuboCop Gradual, SimpleCov coverage,<br>
+YARD documentation generation, release/support scripts, and local <code>mise</code><br>
+environment configuration.</li>
+  <li>Added GitHub/GitLab CI coverage for MRI Ruby, JRuby, TruffleRuby, locked and<br>
+unlocked dependencies, dependency heads, style checks, license checks, and<br>
+template drift checks.</li>
+  <li>Added generated project documentation and governance files, including<br>
+Markdown README, CONTRIBUTING, FUNDING, SECURITY, CODE_OF_CONDUCT, license<br>
+index, citation metadata, and published YARD docs.</li>
+  <li>Added <code>Warden::OAuth::Version::VERSION</code> and <code>Warden::OAuth::VERSION</code> constants<br>
+for the gem version.</li>
 </ul>
 
-<h2 id="002-oct-1-2009-keep-the-manager-out-of-the-business-of-strategies">0.0.2 (Oct 1, 2009) Keep the manager out of the business of strategies</h2>
+<h3 id="changed-1">Changed</h3>
 
 <ul>
-  <li>Removing the access_token_user_finder from Warden::Manager and adding it to<br>
-the Warden::StrategyBuilder module</li>
+  <li>Migrated the README from legacy RDoc to Markdown and restored the historical<br>
+usage documentation in the template-managed Synopsis, Configuration, and Basic<br>
+Usage sections.</li>
+  <li>Modernized the test suite from the legacy RSpec 1/2 style runner and<br>
+<code>should</code> expectations to RSpec 3.</li>
+  <li>Tightened development dependency floors while preserving the oldest supported<br>
+development workflows: <code>fakeweb</code> 1.3, <code>rack-session</code> 2.0, <code>rack-test</code> 2.2,<br>
+and <code>rspec</code> 3.13.</li>
+  <li>Updated gem metadata, repository links, funding links, CI badges, and<br>
+generated docs to use the <code>ruby-oauth/warden_oauth</code> repository and<br>
+<code>ruby-oauth</code> Open Collective.</li>
+  <li>Updated generated namespace references to use the real public namespace,<br>
+<code>Warden::OAuth</code>, including README heading/badge, gemspec version loading,<br>
+RBS signatures, and YARD docs.</li>
 </ul>
 
-<h2 id="001-sep-16-2009-the-beginning-of-easy-oauth-for-warden">0.0.1 (Sep 16, 2009) The beginning of easy OAuth for Warden</h2>
+<h3 id="removed-1">Removed</h3>
 
 <ul>
-  <li>Adding the initial implementation of the warden_oauth gem</li>
+  <li>Removed the legacy <code>README.rdoc</code>, <code>LICENSE.txt</code>, and RSpec <code>spec.opts</code> files<br>
+in favor of the generated Markdown/license/spec harness.</li>
 </ul>
+
+<h3 id="fixed-1">Fixed</h3>
+
+<ul>
+  <li>Fixed the Rack session spec setup for modern Rack by loading <code>rack-session</code><br>
+and using a Rack-compatible session secret.</li>
+  <li>Fixed test compatibility with modern Ruby by shimming <code>File.exists?</code> for<br>
+<code>fakeweb</code> during specs.</li>
+</ul>
+
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun 15 07:24:17 2026 by
+  Generated on Mon Jun 15 07:42:44 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>
