@@ -167,7 +167,7 @@ Gem::Specification.new do |spec|
   # spec.add_development_dependency("vcr", ">= 4")                        # 6.0 claims to support ruby >= 2.3, but fails on ruby 2.4
   # spec.add_development_dependency("webmock", ">= 3")                    # Last version to support ruby >= 2.3
   spec.add_development_dependency("fakeweb", "~> 1.3", ">= 1.3.0")        # ruby >= 0
-  spec.add_development_dependency("rack-session", "~> 2.0", ">= 2.0.0")   # ruby >= 2.4.0
+  spec.add_development_dependency("rack-session", ">= 0")                 # ruby >= 2.4.0
   spec.add_development_dependency("rack-test", "~> 2.2", ">= 2.2.0")      # ruby >= 2.0
   spec.add_development_dependency("rspec", "~> 3.13", ">= 3.13.2")        # ruby >= 0
 end

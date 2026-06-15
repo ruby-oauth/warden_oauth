@@ -121,8 +121,7 @@ Usage sections.</li>
   <li>Modernized the test suite from the legacy RSpec 1/2 style runner and<br>
 <code>should</code> expectations to RSpec 3.</li>
   <li>Tightened development dependency floors while preserving the oldest supported<br>
-development workflows: <code>fakeweb</code> 1.3, <code>rack-session</code> 2.0, <code>rack-test</code> 2.2,<br>
-and <code>rspec</code> 3.13.</li>
+development workflows: <code>fakeweb</code> 1.3, <code>rack-test</code> 2.2, and <code>rspec</code> 3.13.</li>
   <li>Updated gem metadata, repository links, funding links, CI badges, and<br>
 generated docs to use the <code>ruby-oauth/warden_oauth</code> repository and<br>
 <code>ruby-oauth</code> Open Collective.</li>
@@ -143,8 +142,8 @@ in favor of the generated Markdown/license/spec harness.</li>
 <ul>
   <li>Fixed the Rack session spec setup for modern Rack by loading <code>rack-session</code><br>
 and using a Rack-compatible session secret.</li>
-  <li>Fixed old-Ruby CI by constraining <code>rack-session</code> to the 2.0 patch line only<br>
-in the Ruby 2.4/2.5 appraisals.</li>
+  <li>Fixed old-Ruby CI by using the <code>pboling/rack-session</code> old-Ruby fork only in<br>
+the Ruby 2.4/2.5 appraisals.</li>
   <li>Fixed test compatibility with modern Ruby by shimming <code>File.exists?</code> for<br>
 <code>fakeweb</code> during specs.</li>
 </ul>
@@ -152,7 +151,7 @@ in the Ruby 2.4/2.5 appraisals.</li>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun 15 07:50:58 2026 by
+  Generated on Mon Jun 15 08:08:22 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>

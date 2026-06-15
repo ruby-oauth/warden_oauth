@@ -60,8 +60,7 @@ Please file a bug if you notice a violation of semantic versioning.
 - Modernized the test suite from the legacy RSpec 1/2 style runner and
   `should` expectations to RSpec 3.
 - Tightened development dependency floors while preserving the oldest supported
-  development workflows: `fakeweb` 1.3, `rack-session` 2.0, `rack-test` 2.2,
-  and `rspec` 3.13.
+  development workflows: `fakeweb` 1.3, `rack-test` 2.2, and `rspec` 3.13.
 - Updated gem metadata, repository links, funding links, CI badges, and
   generated docs to use the `ruby-oauth/warden_oauth` repository and
   `ruby-oauth` Open Collective.
@@ -78,8 +77,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Fixed the Rack session spec setup for modern Rack by loading `rack-session`
   and using a Rack-compatible session secret.
-- Fixed old-Ruby CI by constraining `rack-session` to the 2.0 patch line only
-  in the Ruby 2.4/2.5 appraisals.
+- Fixed old-Ruby CI by using the `pboling/rack-session` old-Ruby fork only in
+  the Ruby 2.4/2.5 appraisals.
 - Fixed test compatibility with modern Ruby by shimming `File.exists?` for
   `fakeweb` during specs.
 
