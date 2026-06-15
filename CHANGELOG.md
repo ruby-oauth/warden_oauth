@@ -28,6 +28,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Corrected generated namespace references to use `Warden::OAuth`.
 - Corrected generated repository and funding links to use the `ruby-oauth` organization.
 
 ### Security

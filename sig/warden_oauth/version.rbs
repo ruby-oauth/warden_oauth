@@ -1,6 +1,8 @@
-module WardenOauth
-  module Version
+module Warden
+  module OAuth
+    module Version
+      VERSION: String
+    end
     VERSION: String
   end
-  VERSION: String
 end

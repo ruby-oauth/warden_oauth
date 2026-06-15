@@ -28,7 +28,7 @@
     [73, 9, 54, "RSpec/RemoveConst: Do not use remove_const in specs. Consider using e.g. `stub_const`.", 3324104227],
     [73, 67, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058]
   ],
-  "warden_oauth.gemspec:1811741792": [
+  "warden_oauth.gemspec:1607247456": [
     [36, 32, 8, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.0, which may be specified in .rubocop.yml) should be equal.", 484834369]
   ]
 }

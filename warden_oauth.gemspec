@@ -11,14 +11,14 @@ gem_version =
     # Loading Version into an anonymous module allows version.rb to get code coverage from SimpleCov!
     # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-2630782358
     # See: https://github.com/panorama-ed/memo_wise/pull/397
-    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/warden_oauth/version.rb", mod) }::WardenOauth::Version::VERSION
+    Module.new.tap { |mod| Kernel.load("#{__dir__}/lib/warden_oauth/version.rb", mod) }::Warden::OAuth::Version::VERSION
   else
     # NOTE: Use __FILE__ or __dir__ until removal of Ruby 1.x support
     # __dir__ introduced in Ruby 1.9.1
     lib = File.expand_path("lib", File.dirname(__FILE__))
     $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
     require "warden_oauth/version"
-    WardenOauth::Version::VERSION
+    Warden::OAuth::Version::VERSION
   end
 
 Gem::Specification.new do |spec|
