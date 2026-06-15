@@ -57,6 +57,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Migrated the README from legacy RDoc to Markdown and restored the historical
   usage documentation in the template-managed Synopsis, Configuration, and Basic
   Usage sections.
+- Documented the `rack-session` fork required by applications still running on
+  Ruby 2.4 or Ruby 2.5.
 - Modernized the test suite from the legacy RSpec 1/2 style runner and
   `should` expectations to RSpec 3.
 - Tightened development dependency floors while preserving the oldest supported

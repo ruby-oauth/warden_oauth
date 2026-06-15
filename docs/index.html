@@ -327,6 +327,11 @@ end
 <p>Each <code>config.oauth(:service_name)</code> declaration creates a strategy class named <code>Warden::OAuth::Strategy::ServiceName</code> and registers it with Warden as <code>:service_name_oauth</code>.<br>
 For example, <code>config.oauth(:twitter)</code> creates <code>Warden::OAuth::Strategy::Twitter</code> and registers <code>:twitter_oauth</code>.</p>
 
+<p>Applications still running on Ruby 2.4 or Ruby 2.5 must use the old-Ruby <code>rack-session</code> fork, because released <code>rack-session</code> versions that otherwise resolve for those Rubies can fail while loading <code>rack/session/cookie</code>:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">gem &quot;rack-session&quot;, &quot;&lt; 2&quot;, :github =&gt; &quot;pboling/rack-session&quot;, :branch =&gt; &quot;fix-missing-rack-session&quot;
+</code></pre>
+
 <h2 id="-basic-usage">🔧 Basic Usage</h2>
 
 <p>Users are identified by the OAuth access token returned by the provider.<br>
@@ -563,7 +568,7 @@ Please consider sponsoring me or the project.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun 15 07:42:44 2026 by
+  Generated on Mon Jun 15 14:51:14 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>

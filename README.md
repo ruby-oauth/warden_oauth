@@ -128,6 +128,12 @@ end
 Each `config.oauth(:service_name)` declaration creates a strategy class named `Warden::OAuth::Strategy::ServiceName` and registers it with Warden as `:service_name_oauth`.
 For example, `config.oauth(:twitter)` creates `Warden::OAuth::Strategy::Twitter` and registers `:twitter_oauth`.
 
+Applications still running on Ruby 2.4 or Ruby 2.5 must use the old-Ruby `rack-session` fork, because released `rack-session` versions that otherwise resolve for those Rubies can fail while loading `rack/session/cookie`:
+
+```ruby
+gem "rack-session", "< 2", :github => "pboling/rack-session", :branch => "fix-missing-rack-session"
+```
+
 ## 🔧 Basic Usage
 
 Users are identified by the OAuth access token returned by the provider.
