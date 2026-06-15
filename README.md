@@ -21,6 +21,9 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 
 ## 🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"/></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"/></a>
 
+`warden_oauth` adds OAuth authentication strategy helpers to the Warden authentication framework.
+It lets a Rack application declare named OAuth services on `Warden::Manager`, then route requests through the generated Warden strategy for that service.
+
 ## 💡 Info you can shake a stick at
 
 | Tokens to Remember | [![Gem name][⛳️name-img]][⛳️gem-name] [![Gem namespace][⛳️namespace-img]][⛳️gem-namespace] |
@@ -106,7 +109,57 @@ gem install warden_oauth
 
 ## ⚙️ Configuration
 
+Require `warden_oauth`, then configure each OAuth service inside the `Warden::Manager` middleware declaration:
+
+```ruby
+use Warden::Manager do |config|
+  config.failure_app = FailureApp
+
+  config.oauth(:twitter) do |twitter|
+    twitter.consumer_secret "YOUR CONSUMER SECRET"
+    twitter.consumer_key "YOUR CONSUMER KEY"
+    twitter.options site: "http://twitter.com"
+  end
+
+  config.default_strategies(:twitter_oauth, :password, :other)
+end
+```
+
+Each `config.oauth(:service_name)` declaration creates a strategy class named `Warden::OAuth::Strategy::ServiceName` and registers it with Warden as `:service_name_oauth`.
+For example, `config.oauth(:twitter)` creates `Warden::OAuth::Strategy::Twitter` and registers `:twitter_oauth`.
+
 ## 🔧 Basic Usage
+
+Users are identified by the OAuth access token returned by the provider.
+Register an access-token user finder for each OAuth service:
+
+```ruby
+Warden::OAuth.access_token_user_finder(:twitter) do |access_token|
+  User.find_by_access_token_and_access_secret(access_token.token, access_token.secret)
+end
+```
+
+If the finder returns a user, that user is authenticated into the session.
+If it returns `nil`, Warden calls the configured failure app and exposes the original access token at:
+
+```ruby
+env["warden.options"][:oauth][:access_token]
+```
+
+To start an OAuth flow, send the protected request with a `warden_oauth_provider` parameter matching the configured service name:
+
+```ruby
+link_to "Twitter Authentication", url_for(login_path(warden_oauth_provider: "twitter"))
+```
+
+The strategy has three outcomes:
+
+1. The OAuth credentials are invalid, and the failure app is called.
+2. The OAuth credentials are valid, but no local user is associated with them; the failure app is called with `env["warden.options"][:oauth][:access_token]` available.
+3. The OAuth credentials are valid, and the returned user is authenticated successfully.
+
+In Rails, do not define `:warden_oauth_provider` as part of the login route itself.
+If Rails consumes that parameter before the request reaches the Warden Rack middleware, the OAuth strategy will not run.
 
 ## 🦷 FLOSS Funding
 
