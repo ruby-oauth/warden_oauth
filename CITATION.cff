@@ -12,9 +12,9 @@ authors:
     orcid: 'https://orcid.org/0009-0008-8519-441X'
 identifiers:
   - type: url
-    value: 'http://github.com/roman/warden_oauth'
+    value: 'https://github.com/ruby-oauth/warden_oauth'
     description: "warden_oauth"
-repository-code: 'http://github.com/roman/warden_oauth'
+repository-code: 'https://github.com/ruby-oauth/warden_oauth'
 abstract: >-
   warden_oauth
 license: See license file

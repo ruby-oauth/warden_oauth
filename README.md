@@ -1,4 +1,4 @@
-<a href="https://github.com/roman"><img alt="roman Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/roman/avatar-128px.svg" width="14%" align="right"/></a>
+<a href="https://github.com/ruby-oauth"><img alt="ruby-oauth Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/ruby-oauth/avatar-128px.svg" width="14%" align="right"/></a>
 
 # 🛡️ WardenOauth
 
@@ -61,14 +61,14 @@ not practical for the current toolchain.
 
 | Federated [DVCS][💎d-in-dvcs] Repository | Status | Issues | PRs | Wiki | CI | Discussions |
 |-------------------------------------------------|-----------------------------------------------------------------------|---------------------------|--------------------------|---------------------------|--------------------------|------------------------------|
-| 🧪 [roman/warden_oauth on GitLab][📜src-gl] | The Truth | [💚][🤝gl-issues] | [💚][🤝gl-pulls] | [💚][📜gl-wiki] | 🐭 Tiny Matrix | ➖ |
-| 🧊 [roman/warden_oauth on CodeBerg][📜src-cb] | An Ethical Mirror ([Donate][🤝cb-donate]) | [💚][🤝cb-issues] | [💚][🤝cb-pulls] | ➖ | ⭕️ No Matrix | ➖ |
-| 🐙 [roman/warden_oauth on GitHub][📜src-gh] | Another Mirror | [💚][🤝gh-issues] | [💚][🤝gh-pulls] | [💚][📜gh-wiki] | 💯 Full Matrix | [💚][gh-discussions] |
+| 🧪 [ruby-oauth/warden_oauth on GitLab][📜src-gl] | The Truth | [💚][🤝gl-issues] | [💚][🤝gl-pulls] | [💚][📜gl-wiki] | 🐭 Tiny Matrix | ➖ |
+| 🧊 [ruby-oauth/warden_oauth on CodeBerg][📜src-cb] | An Ethical Mirror ([Donate][🤝cb-donate]) | [💚][🤝cb-issues] | [💚][🤝cb-pulls] | ➖ | ⭕️ No Matrix | ➖ |
+| 🐙 [ruby-oauth/warden_oauth on GitHub][📜src-gh] | Another Mirror | [💚][🤝gh-issues] | [💚][🤝gh-pulls] | [💚][📜gh-wiki] | 💯 Full Matrix | [💚][gh-discussions] |
 | 🎮️ [Discord Server][✉️discord-invite] | [![Live Chat on Discord][✉️discord-invite-img-ftb]][✉️discord-invite] | [Let's][✉️discord-invite] | [talk][✉️discord-invite] | [about][✉️discord-invite] | [this][✉️discord-invite] | [library!][✉️discord-invite] |
 
 </details>
 
-[gh-discussions]: http://github.com/roman/warden_oauth/discussions
+[gh-discussions]: https://github.com/ruby-oauth/warden_oauth/discussions
 
 ### Enterprise Support [![Tidelift](https://tidelift.com/badges/package/rubygems/warden_oauth)](https://tidelift.com/subscription/pkg/rubygems-warden_oauth?utm_source=rubygems-warden_oauth&utm_medium=referral&utm_campaign=readme)
 
@@ -163,17 +163,17 @@ If Rails consumes that parameter before the request reaches the Warden Rack midd
 
 ## 🦷 FLOSS Funding
 
-While roman tools are free software and will always be, the project would benefit immensely from some funding.
+While ruby-oauth tools are free software and will always be, the project would benefit immensely from some funding.
 Raising a monthly budget of... "dollars" would make the project more sustainable.
 
 We welcome both individual and corporate sponsors! We also offer a
 wide array of funding channels to account for your preferences.
 Currently, [Open Collective][🖇osc] is our preferred funding platform.
 
-**If you're working in a company that's making significant use of roman tools we'd
-appreciate it if you suggest to your company to become a roman sponsor.**
+**If you're working in a company that's making significant use of ruby-oauth tools we'd
+appreciate it if you suggest to your company to become a ruby-oauth sponsor.**
 
-You can support the development of roman tools via
+You can support the development of ruby-oauth tools via
 [GitHub Sponsors][🖇sponsor],
 [Liberapay][⛳liberapay],
 [PayPal][🖇paypal],
@@ -204,7 +204,7 @@ NOTE: [kettle-readme-backers][kettle-readme-backers] updates this list every day
 No sponsors yet. Be the first!
 <!-- OPENCOLLECTIVE-ORGANIZATIONS:END -->
 
-[kettle-readme-backers]: http://github.com/roman/warden_oauth/blob/main/exe/kettle-readme-backers
+[kettle-readme-backers]: https://github.com/ruby-oauth/warden_oauth/blob/main/exe/kettle-readme-backers
 
 ### Another way to support open-source
 
@@ -260,16 +260,16 @@ chat rooms and mailing lists agrees to follow the [![Contributor Covenant 2.1][�
 
 Made with [contributors-img][🖐contrib-rocks].
 
-Also see GitLab Contributors: [https://gitlab.com/roman/warden_oauth/-/graphs/main][🚎contributors-gl]
+Also see GitLab Contributors: [https://gitlab.com/ruby-oauth/warden_oauth/-/graphs/main][🚎contributors-gl]
 
 <details>
  <summary>⭐️ Star History</summary>
 
-<a href="https://star-history.com/roman/warden_oauth&Date">
+<a href="https://star-history.com/ruby-oauth/warden_oauth&Date">
  <picture>
- <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=roman/warden_oauth&type=Date&theme=dark" />
- <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=roman/warden_oauth&type=Date" />
- <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=roman/warden_oauth&type=Date" />
+ <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ruby-oauth/warden_oauth&type=Date&theme=dark" />
+ <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ruby-oauth/warden_oauth&type=Date" />
+ <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ruby-oauth/warden_oauth&type=Date" />
  </picture>
 </a>
 
@@ -379,12 +379,12 @@ Thanks for RTFM. ☺️
 [✉️ruby-friends]: https://app.daily.dev/squads/rubyfriends
 
 [✇bundle-group-pattern]: https://gist.github.com/pboling/4564780
-[⛳️gem-namespace]: http://github.com/roman/warden_oauth
+[⛳️gem-namespace]: https://github.com/ruby-oauth/warden_oauth
 [⛳️namespace-img]: https://img.shields.io/badge/namespace-WardenOauth-3C2D2D.svg?style=square&logo=ruby&logoColor=white
 [⛳️gem-name]: https://bestgems.org/gems/warden_oauth
 [⛳️name-img]: https://img.shields.io/badge/name-warden__oauth-3C2D2D.svg?style=square&logo=rubygems&logoColor=red
-[⛳️tag-img]: https://img.shields.io/github/tag/roman/warden_oauth.svg
-[⛳️tag]: http://github.com/roman/warden_oauth/releases
+[⛳️tag-img]: https://img.shields.io/github/tag/ruby-oauth/warden_oauth.svg
+[⛳️tag]: https://github.com/ruby-oauth/warden_oauth/releases
 [🚂maint-blog]: http://www.railsbling.com/tags/warden_oauth
 [🚂maint-blog-img]: https://img.shields.io/badge/blog-railsbling-0093D0.svg?style=for-the-badge&logo=rubyonrails&logoColor=orange
 [🚂maint-contact]: http://www.railsbling.com/contact
@@ -419,66 +419,66 @@ Thanks for RTFM. ☺️
 [💁🏼‍♂️peterboling]: http://www.peterboling.com
 [🚂railsbling]: http://www.railsbling.com
 [📜src-gl-img]: https://img.shields.io/badge/GitLab-FBA326?style=for-the-badge&logo=Gitlab&logoColor=orange
-[📜src-gl]: https://gitlab.com/roman/warden_oauth
+[📜src-gl]: https://gitlab.com/ruby-oauth/warden_oauth
 [📜src-cb-img]: https://img.shields.io/badge/CodeBerg-4893CC?style=for-the-badge&logo=CodeBerg&logoColor=blue
-[📜src-cb]: https://codeberg.org/roman/warden_oauth
+[📜src-cb]: https://codeberg.org/ruby-oauth/warden_oauth
 [📜src-gh-img]: https://img.shields.io/badge/GitHub-238636?style=for-the-badge&logo=Github&logoColor=green
-[📜src-gh]: http://github.com/roman/warden_oauth
+[📜src-gh]: https://github.com/ruby-oauth/warden_oauth
 [📜docs-cr-rd-img]: https://img.shields.io/badge/RubyDoc-Current_Release-943CD2?style=for-the-badge&logo=readthedocs&logoColor=white
 [📜docs-head-rd-img]: https://img.shields.io/badge/YARD_on_Galtzo.com-HEAD-943CD2?style=for-the-badge&logo=readthedocs&logoColor=white
-[📜gl-wiki]: https://gitlab.com/roman/warden_oauth/-/wikis/home
-[📜gh-wiki]: http://github.com/roman/warden_oauth/wiki
+[📜gl-wiki]: https://gitlab.com/ruby-oauth/warden_oauth/-/wikis/home
+[📜gh-wiki]: https://github.com/ruby-oauth/warden_oauth/wiki
 [📜gl-wiki-img]: https://img.shields.io/badge/wiki-gitlab-943CD2.svg?style=for-the-badge&logo=gitlab&logoColor=white
 [📜gh-wiki-img]: https://img.shields.io/badge/wiki-github-943CD2.svg?style=for-the-badge&logo=github&logoColor=white
 [👽dl-rank]: https://bestgems.org/gems/warden_oauth
 [👽dl-ranki]: https://img.shields.io/gem/rd/warden_oauth.svg
 [👽version]: https://bestgems.org/gems/warden_oauth
 [👽versioni]: https://img.shields.io/gem/v/warden_oauth.svg
-[🏀qlty-mnt]: https://qlty.sh/gh/roman/projects/warden_oauth
-[🏀qlty-mnti]: https://qlty.sh/gh/roman/projects/warden_oauth/maintainability.svg
-[🏀qlty-cov]: https://qlty.sh/gh/roman/projects/warden_oauth/metrics/code?sort=coverageRating
-[🏀qlty-covi]: https://qlty.sh/gh/roman/projects/warden_oauth/coverage.svg
-[🏀codecov]: https://codecov.io/gh/roman/warden_oauth
-[🏀codecovi]: https://codecov.io/gh/roman/warden_oauth/graph/badge.svg
-[🏀coveralls]: https://coveralls.io/github/roman/warden_oauth?branch=main
-[🏀coveralls-img]: https://coveralls.io/repos/github/roman/warden_oauth/badge.svg?branch=main
-[🚎ruby-2.4-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-2.4.yml
-[🚎ruby-2.5-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-2.5.yml
-[🚎ruby-2.6-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-2.6.yml
-[🚎ruby-2.7-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-2.7.yml
-[🚎ruby-3.0-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-3.0.yml
-[🚎ruby-3.1-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-3.1.yml
-[🚎ruby-3.2-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-3.2.yml
-[🚎ruby-3.3-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-3.3.yml
-[🚎ruby-3.4-wf]: http://github.com/roman/warden_oauth/actions/workflows/ruby-3.4.yml
-[🚎jruby-9.2-wf]: http://github.com/roman/warden_oauth/actions/workflows/jruby-9.2.yml
-[🚎jruby-9.3-wf]: http://github.com/roman/warden_oauth/actions/workflows/jruby-9.3.yml
-[🚎jruby-9.4-wf]: http://github.com/roman/warden_oauth/actions/workflows/jruby-9.4.yml
-[🚎truby-22.3-wf]: http://github.com/roman/warden_oauth/actions/workflows/truffleruby-22.3.yml
-[🚎truby-23.0-wf]: http://github.com/roman/warden_oauth/actions/workflows/truffleruby-23.0.yml
-[🚎truby-23.1-wf]: http://github.com/roman/warden_oauth/actions/workflows/truffleruby-23.1.yml
-[🚎truby-24.2-wf]: http://github.com/roman/warden_oauth/actions/workflows/truffleruby-24.2.yml
-[🚎truby-25.0-wf]: http://github.com/roman/warden_oauth/actions/workflows/truffleruby-25.0.yml
-[🚎2-cov-wf]: http://github.com/roman/warden_oauth/actions/workflows/coverage.yml
-[🚎2-cov-wfi]: http://github.com/roman/warden_oauth/actions/workflows/coverage.yml/badge.svg
-[🚎3-hd-wf]: http://github.com/roman/warden_oauth/actions/workflows/heads.yml
-[🚎3-hd-wfi]: http://github.com/roman/warden_oauth/actions/workflows/heads.yml/badge.svg
-[🚎5-st-wf]: http://github.com/roman/warden_oauth/actions/workflows/style.yml
-[🚎5-st-wfi]: http://github.com/roman/warden_oauth/actions/workflows/style.yml/badge.svg
-[🚎9-t-wf]: http://github.com/roman/warden_oauth/actions/workflows/truffle.yml
-[🚎9-t-wfi]: http://github.com/roman/warden_oauth/actions/workflows/truffle.yml/badge.svg
-[🚎10-j-wf]: http://github.com/roman/warden_oauth/actions/workflows/jruby.yml
-[🚎10-j-wfi]: http://github.com/roman/warden_oauth/actions/workflows/jruby.yml/badge.svg
-[🚎11-c-wf]: http://github.com/roman/warden_oauth/actions/workflows/current.yml
-[🚎11-c-wfi]: http://github.com/roman/warden_oauth/actions/workflows/current.yml/badge.svg
-[🚎12-crh-wf]: http://github.com/roman/warden_oauth/actions/workflows/dep-heads.yml
-[🚎12-crh-wfi]: http://github.com/roman/warden_oauth/actions/workflows/dep-heads.yml/badge.svg
-[🚎13-🔒️-wf]: http://github.com/roman/warden_oauth/actions/workflows/locked_deps.yml
-[🚎13-🔒️-wfi]: http://github.com/roman/warden_oauth/actions/workflows/locked_deps.yml/badge.svg
-[🚎14-🔓️-wf]: http://github.com/roman/warden_oauth/actions/workflows/unlocked_deps.yml
-[🚎14-🔓️-wfi]: http://github.com/roman/warden_oauth/actions/workflows/unlocked_deps.yml/badge.svg
-[🚎15-🪪-wf]: http://github.com/roman/warden_oauth/actions/workflows/license-eye.yml
-[🚎15-🪪-wfi]: http://github.com/roman/warden_oauth/actions/workflows/license-eye.yml/badge.svg
+[🏀qlty-mnt]: https://qlty.sh/gh/ruby-oauth/projects/warden_oauth
+[🏀qlty-mnti]: https://qlty.sh/gh/ruby-oauth/projects/warden_oauth/maintainability.svg
+[🏀qlty-cov]: https://qlty.sh/gh/ruby-oauth/projects/warden_oauth/metrics/code?sort=coverageRating
+[🏀qlty-covi]: https://qlty.sh/gh/ruby-oauth/projects/warden_oauth/coverage.svg
+[🏀codecov]: https://codecov.io/gh/ruby-oauth/warden_oauth
+[🏀codecovi]: https://codecov.io/gh/ruby-oauth/warden_oauth/graph/badge.svg
+[🏀coveralls]: https://coveralls.io/github/ruby-oauth/warden_oauth?branch=main
+[🏀coveralls-img]: https://coveralls.io/repos/github/ruby-oauth/warden_oauth/badge.svg?branch=main
+[🚎ruby-2.4-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-2.4.yml
+[🚎ruby-2.5-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-2.5.yml
+[🚎ruby-2.6-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-2.6.yml
+[🚎ruby-2.7-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-2.7.yml
+[🚎ruby-3.0-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-3.0.yml
+[🚎ruby-3.1-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-3.1.yml
+[🚎ruby-3.2-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-3.2.yml
+[🚎ruby-3.3-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-3.3.yml
+[🚎ruby-3.4-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/ruby-3.4.yml
+[🚎jruby-9.2-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/jruby-9.2.yml
+[🚎jruby-9.3-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/jruby-9.3.yml
+[🚎jruby-9.4-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/jruby-9.4.yml
+[🚎truby-22.3-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffleruby-22.3.yml
+[🚎truby-23.0-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffleruby-23.0.yml
+[🚎truby-23.1-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffleruby-23.1.yml
+[🚎truby-24.2-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffleruby-24.2.yml
+[🚎truby-25.0-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffleruby-25.0.yml
+[🚎2-cov-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/coverage.yml
+[🚎2-cov-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/coverage.yml/badge.svg
+[🚎3-hd-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/heads.yml
+[🚎3-hd-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/heads.yml/badge.svg
+[🚎5-st-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/style.yml
+[🚎5-st-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/style.yml/badge.svg
+[🚎9-t-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffle.yml
+[🚎9-t-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/truffle.yml/badge.svg
+[🚎10-j-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/jruby.yml
+[🚎10-j-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/jruby.yml/badge.svg
+[🚎11-c-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/current.yml
+[🚎11-c-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/current.yml/badge.svg
+[🚎12-crh-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/dep-heads.yml
+[🚎12-crh-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/dep-heads.yml/badge.svg
+[🚎13-🔒️-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/locked_deps.yml
+[🚎13-🔒️-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/locked_deps.yml/badge.svg
+[🚎14-🔓️-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/unlocked_deps.yml
+[🚎14-🔓️-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/unlocked_deps.yml/badge.svg
+[🚎15-🪪-wf]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/license-eye.yml
+[🚎15-🪪-wfi]: https://github.com/ruby-oauth/warden_oauth/actions/workflows/license-eye.yml/badge.svg
 [💎ruby-1.8i]: https://img.shields.io/badge/Ruby-1.8_(%F0%9F%9A%ABCI)-AABBCC?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-1.9i]: https://img.shields.io/badge/Ruby-1.9_(%F0%9F%9A%ABCI)-AABBCC?style=for-the-badge&logo=ruby&logoColor=white
 [💎ruby-2.0i]: https://img.shields.io/badge/Ruby-2.0_(%F0%9F%9A%ABCI)-AABBCC?style=for-the-badge&logo=ruby&logoColor=white
@@ -508,34 +508,34 @@ Thanks for RTFM. ☺️
 [💎jruby-9.4i]: https://img.shields.io/badge/JRuby-9.4-FBE742?style=for-the-badge&logo=ruby&logoColor=red
 [💎jruby-c-i]: https://img.shields.io/badge/JRuby-current-FBE742?style=for-the-badge&logo=ruby&logoColor=green
 [💎jruby-headi]: https://img.shields.io/badge/JRuby-HEAD-FBE742?style=for-the-badge&logo=ruby&logoColor=blue
-[🤝gh-issues]: http://github.com/roman/warden_oauth/issues
-[🤝gh-pulls]: http://github.com/roman/warden_oauth/pulls
-[🤝gl-issues]: https://gitlab.com/roman/warden_oauth/-/issues
-[🤝gl-pulls]: https://gitlab.com/roman/warden_oauth/-/merge_requests
-[🤝cb-issues]: https://codeberg.org/roman/warden_oauth/issues
-[🤝cb-pulls]: https://codeberg.org/roman/warden_oauth/pulls
+[🤝gh-issues]: https://github.com/ruby-oauth/warden_oauth/issues
+[🤝gh-pulls]: https://github.com/ruby-oauth/warden_oauth/pulls
+[🤝gl-issues]: https://gitlab.com/ruby-oauth/warden_oauth/-/issues
+[🤝gl-pulls]: https://gitlab.com/ruby-oauth/warden_oauth/-/merge_requests
+[🤝cb-issues]: https://codeberg.org/ruby-oauth/warden_oauth/issues
+[🤝cb-pulls]: https://codeberg.org/ruby-oauth/warden_oauth/pulls
 [🤝cb-donate]: https://donate.codeberg.org/
-[🤝contributing]: http://github.com/roman/warden_oauth/blob/main/CONTRIBUTING.md
-[🏀codecov-g]: https://codecov.io/gh/roman/warden_oauth/graph/badge.svg
+[🤝contributing]: https://github.com/ruby-oauth/warden_oauth/blob/main/CONTRIBUTING.md
+[🏀codecov-g]: https://codecov.io/gh/ruby-oauth/warden_oauth/graph/badge.svg
 [🖐contrib-rocks]: https://contrib.rocks
-[🖐contributors]: http://github.com/roman/warden_oauth/graphs/contributors
-[🖐contributors-img]: https://contrib.rocks/image?repo=roman/warden_oauth
-[🚎contributors-gl]: https://gitlab.com/roman/warden_oauth/-/graphs/main
-[🪇conduct]: http://github.com/roman/warden_oauth/blob/main/CODE_OF_CONDUCT.md
+[🖐contributors]: https://github.com/ruby-oauth/warden_oauth/graphs/contributors
+[🖐contributors-img]: https://contrib.rocks/image?repo=ruby-oauth/warden_oauth
+[🚎contributors-gl]: https://gitlab.com/ruby-oauth/warden_oauth/-/graphs/main
+[🪇conduct]: https://github.com/ruby-oauth/warden_oauth/blob/main/CODE_OF_CONDUCT.md
 [🪇conduct-img]: https://img.shields.io/badge/Contributor_Covenant-2.1-259D6C.svg
 [📌pvc]: http://guides.rubygems.org/patterns/#pessimistic-version-constraint
 [📌semver]: https://semver.org/spec/v2.0.0.html
 [📌semver-img]: https://img.shields.io/badge/semver-2.0.0-259D6C.svg?style=flat
 [📌semver-breaking]: https://github.com/semver/semver/issues/716#issuecomment-869336139
 [📌major-versions-not-sacred]: https://tom.preston-werner.com/2022/05/23/major-version-numbers-are-not-sacred.html
-[📌changelog]: http://github.com/roman/warden_oauth/blob/main/CHANGELOG.md
+[📌changelog]: https://github.com/ruby-oauth/warden_oauth/blob/main/CHANGELOG.md
 [📗keep-changelog]: https://keepachangelog.com/en/1.0.0/
 [📗keep-changelog-img]: https://img.shields.io/badge/keep--a--changelog-1.0.0-34495e.svg?style=flat
 [📌gitmoji]: https://gitmoji.dev
 [📌gitmoji-img]: https://img.shields.io/badge/gitmoji_commits-%20%F0%9F%98%9C%20%F0%9F%98%8D-34495e.svg?style=flat-square
 [🧮kloc]: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 [🧮kloc-img]: https://img.shields.io/badge/KLOC-5.053-FFDD67.svg?style=for-the-badge&logo=YouTube&logoColor=blue
-[🔐security]: http://github.com/roman/warden_oauth/blob/main/SECURITY.md
+[🔐security]: https://github.com/ruby-oauth/warden_oauth/blob/main/SECURITY.md
 [🔐security-img]: https://img.shields.io/badge/security-policy-259D6C.svg?style=flat
 [📄copyright-notice-explainer]: https://opensource.stackexchange.com/questions/5778/why-do-licenses-such-as-the-mit-license-specify-a-single-year
 [📄license]: LICENSE.md
@@ -549,7 +549,7 @@ Thanks for RTFM. ☺️
 [🚎yard-current]: http://rubydoc.info/gems/warden_oauth
 [🚎yard-head]: https://warden-oauth.galtzo.com
 [💎stone_checksums]: https://github.com/galtzo-floss/stone_checksums
-[💎SHA_checksums]: https://gitlab.com/roman/warden_oauth/-/tree/main/checksums
+[💎SHA_checksums]: https://gitlab.com/ruby-oauth/warden_oauth/-/tree/main/checksums
 [💎rlts]: https://github.com/rubocop-lts/rubocop-lts
 [💎rlts-img]: https://img.shields.io/badge/code_style_&_linting-rubocop--lts-34495e.svg?plastic&logo=ruby&logoColor=white
 [💎appraisal2]: https://github.com/appraisal-rb/appraisal2
@@ -561,8 +561,8 @@ Thanks for RTFM. ☺️
 |---|---|
 | Package | warden_oauth |
 | Description | 🛡️ warden_oauth will help you create oauth authentication strategies using the oauth<br>helper method on the Warden::Manager config setup |
-| Homepage | http://github.com/roman/warden_oauth |
-| Source | http://github.com/roman/warden_oauth/tree/v0.1.1 |
+| Homepage | https://github.com/ruby-oauth/warden_oauth |
+| Source | https://github.com/ruby-oauth/warden_oauth/tree/v0.1.1 |
 | License | `MIT` |
 | Funding | https://github.com/sponsors/pboling, https://issuehunt.io/u/pboling, https://ko-fi.com/pboling, https://liberapay.com/pboling/donate, https://opencollective.com/ruby-oauth, https://patreon.com/galtzo, https://polar.sh/pboling, https://thanks.dev/u/gh/pboling, https://tidelift.com/funding/github/rubygems/warden_oauth, https://www.buymeacoffee.com/pboling |
 <!-- kettle-jem:metadata:end -->

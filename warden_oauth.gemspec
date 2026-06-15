@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
   spec.description = '🛡️ warden_oauth will help you create oauth authentication strategies using the oauth
       helper method on the Warden::Manager config setup
     '
-  spec.homepage = "http://github.com/roman/warden_oauth"
+  spec.homepage = "https://github.com/ruby-oauth/warden_oauth"
   spec.licenses = ["MIT"]
   spec.required_ruby_version = ">= 1.8"
 

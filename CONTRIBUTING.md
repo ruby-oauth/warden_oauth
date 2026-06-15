@@ -198,7 +198,7 @@ Your picture could be here!
 
 Made with [contributors-img][🖐contrib-rocks].
 
-Also see GitLab Contributors: [https://gitlab.com/roman/warden_oauth/-/graphs/main][🚎contributors-gl]
+Also see GitLab Contributors: [https://gitlab.com/ruby-oauth/warden_oauth/-/graphs/main][🚎contributors-gl]
 
 ## For Maintainers
 
@@ -249,15 +249,15 @@ NOTE: To build without signing the gem set `SKIP_GEM_SIGNING` to any value in th
 14. Run `bundle exec rake release` which will create a git tag for the version,
     push git commits and tags, and push the `.gem` file to the gem host configured in the gemspec.
 
-[📜src-gl]: https://gitlab.com/roman/warden_oauth
-[📜src-cb]: https://codeberg.org/roman/warden_oauth
-[📜src-gh]: http://github.com/roman/warden_oauth
-[🧪build]: http://github.com/roman/warden_oauth/actions
-[🤝conduct]: http://github.com/roman/warden_oauth/blob/main/CODE_OF_CONDUCT.md
+[📜src-gl]: https://gitlab.com/ruby-oauth/warden_oauth
+[📜src-cb]: https://codeberg.org/ruby-oauth/warden_oauth
+[📜src-gh]: https://github.com/ruby-oauth/warden_oauth
+[🧪build]: https://github.com/ruby-oauth/warden_oauth/actions
+[🤝conduct]: https://github.com/ruby-oauth/warden_oauth/blob/main/CODE_OF_CONDUCT.md
 [🖐contrib-rocks]: https://contrib.rocks
-[🖐contributors]: http://github.com/roman/warden_oauth/graphs/contributors
-[🚎contributors-gl]: https://gitlab.com/roman/warden_oauth/-/graphs/main
-[🖐contributors-img]: https://contrib.rocks/image?repo=roman/warden_oauth
+[🖐contributors]: https://github.com/ruby-oauth/warden_oauth/graphs/contributors
+[🚎contributors-gl]: https://gitlab.com/ruby-oauth/warden_oauth/-/graphs/main
+[🖐contributors-img]: https://contrib.rocks/image?repo=ruby-oauth/warden_oauth
 [💎gem-coop]: https://gem.coop
 [🔒️rubygems-security-guide]: https://guides.rubygems.org/security/#building-gems
 [🔒️rubygems-checksums-pr]: https://github.com/rubygems/rubygems/pull/6022

@@ -28,6 +28,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
+- Corrected generated repository and funding links to use the `ruby-oauth` organization.
+
 ### Security
 
 ## 0.1.1 (Feb 1, 2010)
