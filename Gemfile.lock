@@ -432,7 +432,7 @@ DEPENDENCIES
   kramdown-parser-gfm (~> 1.1)
   mutex_m (~> 0.2)
   nomono (~> 1.0, >= 1.0.4)
-  rack-session (~> 2.0, >= 2.0.0)
+  rack-session
   rack-test (~> 2.2, >= 2.2.0)
   rake (~> 13.0)
   rbs (>= 3.0)
