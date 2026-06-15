@@ -24,7 +24,7 @@ gem_version =
 Gem::Specification.new do |spec|
   spec.name = "warden_oauth"
   spec.version = gem_version
-  spec.authors = ["Roman Gonzalez"]
+  spec.authors = ["Roman Gonzalez", "Peter Boling"]
   spec.email = ["floss@galtzo.com"]
 
   spec.summary = "🛡️ OAuth Strategy generator for Warden Authentication Framework"
@@ -166,8 +166,8 @@ Gem::Specification.new do |spec|
   # See: https://github.com/vcr/vcr/issues/1057
   # spec.add_development_dependency("vcr", ">= 4")                        # 6.0 claims to support ruby >= 2.3, but fails on ruby 2.4
   # spec.add_development_dependency("webmock", ">= 3")                    # Last version to support ruby >= 2.3
-  spec.add_development_dependency("fakeweb", ">= 0")
-  spec.add_development_dependency("rack-session", ">= 0")
-  spec.add_development_dependency("rack-test", ">= 0")
-  spec.add_development_dependency("rspec", ">= 0")
+  spec.add_development_dependency("fakeweb", "~> 1.3", ">= 1.3.0")        # ruby >= 0
+  spec.add_development_dependency("rack-session", "~> 2.0", ">= 2.0.0")   # ruby >= 2.4.0
+  spec.add_development_dependency("rack-test", "~> 2.2", ">= 2.2.0")      # ruby >= 2.0
+  spec.add_development_dependency("rspec", "~> 3.13", ">= 3.13.2")        # ruby >= 0
 end
