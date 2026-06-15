@@ -22,14 +22,13 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Changed
 
+- Updated repository and funding links to use the `ruby-oauth` organization.
+
 ### Deprecated
 
 ### Removed
 
 ### Fixed
-
-- Corrected generated namespace references to use `Warden::OAuth`.
-- Corrected generated repository and funding links to use the `ruby-oauth` organization.
 
 ### Security
 
