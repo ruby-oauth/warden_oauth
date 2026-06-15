@@ -20,15 +20,49 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
+- Added a modern `kettle-jem` development harness, including Bundler setup,
+  Appraisals, modular Gemfiles, binstubs, RuboCop Gradual, SimpleCov coverage,
+  YARD documentation generation, release/support scripts, and local `mise`
+  environment configuration.
+- Added GitHub/GitLab CI coverage for MRI Ruby, JRuby, TruffleRuby, locked and
+  unlocked dependencies, dependency heads, style checks, license checks, and
+  template drift checks.
+- Added generated project documentation and governance files, including
+  Markdown README, CONTRIBUTING, FUNDING, SECURITY, CODE_OF_CONDUCT, license
+  index, citation metadata, and published YARD docs.
+- Added `Warden::OAuth::Version::VERSION` and `Warden::OAuth::VERSION` constants
+  for the gem version.
+
 ### Changed
 
-- Updated repository and funding links to use the `ruby-oauth` organization.
+- Migrated the README from legacy RDoc to Markdown and restored the historical
+  usage documentation in the template-managed Synopsis, Configuration, and Basic
+  Usage sections.
+- Modernized the test suite from the legacy RSpec 1/2 style runner and
+  `should` expectations to RSpec 3.
+- Tightened development dependency floors while preserving the oldest supported
+  development workflows: `fakeweb` 1.3, `rack-session` 2.0, `rack-test` 2.2,
+  and `rspec` 3.13.
+- Updated gem metadata, repository links, funding links, CI badges, and
+  generated docs to use the `ruby-oauth/warden_oauth` repository and
+  `ruby-oauth` Open Collective.
+- Updated generated namespace references to use the real public namespace,
+  `Warden::OAuth`, including README heading/badge, gemspec version loading,
+  RBS signatures, and YARD docs.
 
 ### Deprecated
 
 ### Removed
 
+- Removed the legacy `README.rdoc`, `LICENSE.txt`, and RSpec `spec.opts` files
+  in favor of the generated Markdown/license/spec harness.
+
 ### Fixed
+
+- Fixed the Rack session spec setup for modern Rack by loading `rack-session`
+  and using a Rack-compatible session secret.
+- Fixed test compatibility with modern Ruby by shimming `File.exists?` for
+  `fakeweb` during specs.
 
 ### Security
 
