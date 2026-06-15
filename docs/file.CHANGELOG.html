@@ -143,6 +143,8 @@ in favor of the generated Markdown/license/spec harness.</li>
 <ul>
   <li>Fixed the Rack session spec setup for modern Rack by loading <code>rack-session</code><br>
 and using a Rack-compatible session secret.</li>
+  <li>Fixed old-Ruby CI by constraining <code>rack-session</code> to the 2.0 patch line only<br>
+in the Ruby 2.4/2.5 appraisals.</li>
   <li>Fixed test compatibility with modern Ruby by shimming <code>File.exists?</code> for<br>
 <code>fakeweb</code> during specs.</li>
 </ul>
@@ -150,7 +152,7 @@ and using a Rack-compatible session secret.</li>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun 15 07:42:44 2026 by
+  Generated on Mon Jun 15 07:50:58 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>

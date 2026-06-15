@@ -78,6 +78,8 @@ Please file a bug if you notice a violation of semantic versioning.
 
 - Fixed the Rack session spec setup for modern Rack by loading `rack-session`
   and using a Rack-compatible session secret.
+- Fixed old-Ruby CI by constraining `rack-session` to the 2.0 patch line only
+  in the Ruby 2.4/2.5 appraisals.
 - Fixed test compatibility with modern Ruby by shimming `File.exists?` for
   `fakeweb` during specs.
 
