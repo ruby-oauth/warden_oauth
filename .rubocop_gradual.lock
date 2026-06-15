@@ -1,0 +1,34 @@
+{
+  "lib/warden_oauth/strategy.rb:2178461735": [
+    [15, 10, 20, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 3913752241]
+  ],
+  "spec/application_runner.rb:4040215653": [
+    [11, 28, 4, "Style/GlobalVars: Do not introduce global variables.", 2085213120]
+  ],
+  "spec/application_scenario.rb:2574377626": [
+    [19, 17, 4, "Style/GlobalVars: Do not introduce global variables.", 2085213120],
+    [19, 26, 4, "Style/GlobalVars: Do not introduce global variables.", 2085213120],
+    [20, 3, 4, "Style/GlobalVars: Do not introduce global variables.", 2085213120]
+  ],
+  "spec/warden_oauth/config_extension_spec.rb:2977214966": [
+    [3, 1, 23, "RSpec/SpecFilePathFormat: Spec path should end with `warden/config*_spec.rb`.", 119523337],
+    [7, 63, 7, "Lint/UnderscorePrefixedVariableName: Do not use prefix `_` for a variable that is used.", 3558241456]
+  ],
+  "spec/warden_oauth/strategy_spec.rb:2311806486": [
+    [4, 1, 32, "RSpec/SpecFilePathFormat: Spec path should end with `warden/o_auth/strategy*_spec.rb`.", 504857855],
+    [15, 7, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058],
+    [15, 7, 54, "RSpec/RemoveConst: Do not use remove_const in specs. Consider using e.g. `stub_const`.", 1795956886],
+    [15, 65, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058],
+    [17, 7, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058],
+    [21, 14, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058],
+    [22, 49, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058],
+    [39, 40, 4, "Style/GlobalVars: Do not introduce global variables.", 2085213120],
+    [68, 9, 4, "Style/GlobalVars: Do not introduce global variables.", 2085213120],
+    [73, 9, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058],
+    [73, 9, 54, "RSpec/RemoveConst: Do not use remove_const in specs. Consider using e.g. `stub_const`.", 3324104227],
+    [73, 67, 23, "RSpec/DescribedClass: Use `described_class` instead of `Warden::OAuth::Strategy`.", 3627503058]
+  ],
+  "warden_oauth.gemspec:2715852601": [
+    [36, 32, 8, "Gemspec/RequiredRubyVersion: `required_ruby_version` and `TargetRubyVersion` (2.0, which may be specified in .rubocop.yml) should be equal.", 484834369]
+  ]
+}

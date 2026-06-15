@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Warden::OAuth::Strategy
+  
+    &mdash; Documentation by YARD 0.9.44
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
+
+<script type="text/javascript">
+  pathId = "Warden::OAuth::Strategy";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (S)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../Warden.html" title="Warden (module)">Warden</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../OAuth.html" title="Warden::OAuth (module)">OAuth</a></span></span>
+     &raquo; 
+    <span class="title">Strategy</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Warden::OAuth::Strategy
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName">Strategies::Base</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Strategies::Base</li>
+          
+            <li class="next">Warden::OAuth::Strategy</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  <dl>
+      <dt>Extended by:</dt>
+      <dd><span class='object_link'><a href="StrategyBuilder.html" title="Warden::OAuth::StrategyBuilder (module)">StrategyBuilder</a></span></dd>
+  </dl>
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/warden_oauth/strategy.rb
+</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>Holds all the main logic of the OAuth authentication, all the generated<br />
+OAuth classes will extend from this class</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#access_token_user_finders-class_method" title="access_token_user_finders (class method)">.<strong>access_token_user_finders</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Strategy Logic ###.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+    
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#access_token-instance_method" title="#access_token (instance method)">#<strong>access_token</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#authenticate!-instance_method" title="#authenticate! (instance method)">#<strong>authenticate!</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>Manages the OAuth authentication process, there can be 3 outcomes from this Strategy: 1.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#consumer-instance_method" title="#consumer (instance method)">#<strong>consumer</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>OAuth Logic ###.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fail!-instance_method" title="#fail! (instance method)">#<strong>fail!</strong>(msg)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>:nodoc:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#request_token-instance_method" title="#request_token (instance method)">#<strong>request_token</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#valid%3F-instance_method" title="#valid? (instance method)">#<strong>valid?</strong>  &#x21d2; Boolean </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>An OAuth strategy will be valid to execute if: * A ‘warden_oauth_provider’ parameter is given, with the name of the OAuth service * A ‘oauth_token’ is being receive on the request (response from an OAuth provider).</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+    
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="StrategyBuilder.html" title="Warden::OAuth::StrategyBuilder (module)">StrategyBuilder</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="StrategyBuilder.html#access_token_user_finder-instance_method" title="Warden::OAuth::StrategyBuilder#access_token_user_finder (method)">access_token_user_finder</a></span>, <span class='object_link'><a href="StrategyBuilder.html#build-instance_method" title="Warden::OAuth::StrategyBuilder#build (method)">build</a></span></p>
+
+  
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="access_token_user_finders-class_method">
+  
+    .<strong>access_token_user_finders</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>Strategy Logic ###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_access_token_user_finders'>access_token_user_finders</span>
+  <span class='lparen'>(</span><span class='ivar'>@_user_token_finders</span> <span class='op'>||=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="access_token-instance_method">
+  
+    #<strong>access_token</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+81
+82
+83</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 81</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_access_token'>access_token</span>
+  <span class='ivar'>@access_token</span> <span class='op'>||=</span> <span class='id identifier rubyid_request_token'>request_token</span><span class='period'>.</span><span class='id identifier rubyid_get_access_token'>get_access_token</span><span class='lparen'>(</span><span class='symbol'>:oauth_verifier</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>oauth_verifier</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="authenticate!-instance_method">
+  
+    #<strong>authenticate!</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+</div>
+  </div>
+
+<p>Manages the OAuth authentication process, there can be 3 outcomes from this Strategy:</p>
+<ol>
+  <li>The OAuth credentials are invalid and the FailureApp is called</li>
+  <li>The OAuth credentials are valid, but there is no user associated to them. In this case<br />
+the FailureApp is called, but the env[‘warden.options’][:oauth][:access_token] will be<br />
+available.</li>
+  <li>The OAuth credentials are valid, and the user is authenticated successfuly</li>
+</ol>
+
+<p>If you want to signup users with the twitter credentials, you can manage the creation of a new<br />
+user in the FailureApp with the given access_token</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_authenticate!'>authenticate!</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>warden_oauth_provider</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_store_request_token_on_session'>store_request_token_on_session</span>
+    <span class='id identifier rubyid_redirect!'>redirect!</span><span class='lparen'>(</span><span class='id identifier rubyid_request_token'>request_token</span><span class='period'>.</span><span class='id identifier rubyid_authorize_url'>authorize_url</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_throw'>throw</span><span class='lparen'>(</span><span class='symbol'>:warden</span><span class='rparen'>)</span>
+  <span class='kw'>elsif</span> <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>oauth_token</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_load_request_token_from_session'>load_request_token_from_session</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_missing_stored_token?'>missing_stored_token?</span>
+      <span class='id identifier rubyid_fail!'>fail!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>There is no OAuth authentication in progress</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>elsif</span> <span class='op'>!</span><span class='id identifier rubyid_stored_token_match_recieved_token?'>stored_token_match_recieved_token?</span>
+      <span class='id identifier rubyid_fail!'>fail!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Received OAuth token didn&#39;t match stored OAuth token</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_user'>user</span> <span class='op'>=</span> <span class='id identifier rubyid_find_user_by_access_token'>find_user_by_access_token</span><span class='lparen'>(</span><span class='id identifier rubyid_access_token'>access_token</span><span class='rparen'>)</span>
+      <span class='kw'>if</span> <span class='id identifier rubyid_user'>user</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+        <span class='id identifier rubyid_fail!'>fail!</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>User with access token not found</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_throw_error_with_oauth_info'>throw_error_with_oauth_info</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_success!'>success!</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+      <span class='kw'>end</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="consumer-instance_method">
+  
+    #<strong>consumer</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>OAuth Logic ###</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+72
+73
+74</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 72</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_consumer'>consumer</span>
+  <span class='ivar'>@consumer</span> <span class='op'>||=</span> <span class='op'>::</span><span class='const'>OAuth</span><span class='op'>::</span><span class='const'>Consumer</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_consumer_key'>consumer_key</span><span class='comma'>,</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_consumer_secret'>consumer_secret</span><span class='comma'>,</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="fail!-instance_method">
+  
+    #<strong>fail!</strong>(msg)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>:nodoc:</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 63</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_fail!'>fail!</span><span class='lparen'>(</span><span class='id identifier rubyid_msg'>msg</span><span class='rparen'>)</span> <span class='comment'>#:nodoc:
+</span>  <span class='id identifier rubyid_errors'>errors</span><span class='period'>.</span><span class='id identifier rubyid_add'>add</span><span class='lparen'>(</span><span class='id identifier rubyid_service_param_name'>service_param_name</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='comma'>,</span> <span class='id identifier rubyid_msg'>msg</span><span class='rparen'>)</span>
+  <span class='kw'>super</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="request_token-instance_method">
+  
+    #<strong>request_token</strong>  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_request_token'>request_token</span>
+  <span class='id identifier rubyid_host_with_port'>host_with_port</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../../Warden.html" title="Warden (module)">Warden</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="../OAuth.html" title="Warden::OAuth (module)">OAuth</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="Utils.html" title="Warden::OAuth::Utils (module)">Utils</a></span></span><span class='period'>.</span><span class='id identifier rubyid_host_with_port'><span class='object_link'><a href="Utils.html#host_with_port-class_method" title="Warden::OAuth::Utils.host_with_port (method)">host_with_port</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_request'>request</span><span class='rparen'>)</span>
+  <span class='ivar'>@request_token</span> <span class='op'>||=</span> <span class='id identifier rubyid_consumer'>consumer</span><span class='period'>.</span><span class='id identifier rubyid_get_request_token'>get_request_token</span><span class='lparen'>(</span><span class='symbol'>:oauth_callback</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_host_with_port'>host_with_port</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="valid?-instance_method">
+  
+    #<strong>valid?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>An OAuth strategy will be valid to execute if:</p>
+<ul>
+  <li>A ‘warden_oauth_provider’ parameter is given, with the name of the OAuth service</li>
+  <li>A ‘oauth_token’ is being receive on the request (response from an OAuth provider)</li>
+</ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/warden_oauth/strategy.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_valid?'>valid?</span>
+  <span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>warden_oauth_provider</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>warden_oauth_provider</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>==</span> <span class='id identifier rubyid_config'>config</span><span class='period'>.</span><span class='id identifier rubyid_provider_name'>provider_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='rparen'>)</span> <span class='op'>||</span>
+    <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>oauth_token</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Jun 15 06:41:36 2026 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.44 (ruby-4.0.5).
+</div>
+
+    </div>
+  </body>
+</html>

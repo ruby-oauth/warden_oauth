@@ -1,11 +1,9 @@
 module Warden
   module OAuth
-
     #
     # Contains methods from Rails to avoid unnecessary dependencies
     #
     module Utils
-
       #
       # Fetched from ActiveSupport::Inflector.camelize to avoid dependencies
       #
@@ -28,13 +26,11 @@ module Warden
             request.scheme == "http" && request.port != 80
           url << ":#{request.port}"
         end
-        
+
         url
       end
 
       module_function :camelize, :host_with_port
-      
     end
-
   end
 end
