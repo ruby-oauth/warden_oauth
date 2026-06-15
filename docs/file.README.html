@@ -83,6 +83,9 @@ I've summarized my thoughts in [this blog post](https://dev.to/galtzo/hostile-ta
 <h2 id="-synopsis--">🌻 Synopsis <a href="https://discord.gg/3qme4XHNKN"><img alt="Galtzo FLOSS Logo by Aboling0, CC BY-SA 4.0" src="https://logos.galtzo.com/assets/images/galtzo-floss/avatar-128px.svg" width="8%" align="right"></a> <a href="https://ruby-toolbox.com"><img alt="ruby-lang Logo, Yukihiro Matsumoto, Ruby Visual Identity Team, CC BY-SA 2.5" src="https://logos.galtzo.com/assets/images/ruby-lang/avatar-128px.svg" width="8%" align="right"></a>
 </h2>
 
+<p><code>warden_oauth</code> adds OAuth authentication strategy helpers to the Warden authentication framework.<br>
+It lets a Rack application declare named OAuth services on <code>Warden::Manager</code>, then route requests through the generated Warden strategy for that service.</p>
+
 <h2 id="-info-you-can-shake-a-stick-at">💡 Info you can shake a stick at</h2>
 
 <table>
@@ -306,7 +309,55 @@ not practical for the current toolchain.</p>
 
 <h2 id="️-configuration">⚙️ Configuration</h2>
 
+<p>Require <code>warden_oauth</code>, then configure each OAuth service inside the <code>Warden::Manager</code> middleware declaration:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">use Warden::Manager do |config|
+  config.failure_app = FailureApp
+
+  config.oauth(:twitter) do |twitter|
+    twitter.consumer_secret &quot;YOUR CONSUMER SECRET&quot;
+    twitter.consumer_key &quot;YOUR CONSUMER KEY&quot;
+    twitter.options :site =&gt; &quot;http://twitter.com&quot;
+  end
+
+  config.default_strategies(:twitter_oauth, :password, :other)
+end
+</code></pre>
+
+<p>Each <code>config.oauth(:service_name)</code> declaration creates a strategy class named <code>Warden::OAuth::Strategy::ServiceName</code> and registers it with Warden as <code>:service_name_oauth</code>.<br>
+For example, <code>config.oauth(:twitter)</code> creates <code>Warden::OAuth::Strategy::Twitter</code> and registers <code>:twitter_oauth</code>.</p>
+
 <h2 id="-basic-usage">🔧 Basic Usage</h2>
+
+<p>Users are identified by the OAuth access token returned by the provider.<br>
+Register an access-token user finder for each OAuth service:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">Warden::OAuth.access_token_user_finder(:twitter) do |access_token|
+  User.find_by_access_token_and_access_secret(access_token.token, access_token.secret)
+end
+</code></pre>
+
+<p>If the finder returns a user, that user is authenticated into the session.<br>
+If it returns <code>nil</code>, Warden calls the configured failure app and exposes the original access token at:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">env[&quot;warden.options&quot;][:oauth][:access_token]
+</code></pre>
+
+<p>To start an OAuth flow, send the protected request with a <code>warden_oauth_provider</code> parameter matching the configured service name:</p>
+
+<pre class="code language-ruby"><code class="language-ruby">link_to &quot;Twitter Authentication&quot;, url_for(login_path(:warden_oauth_provider =&gt; &quot;twitter&quot;))
+</code></pre>
+
+<p>The strategy has three outcomes:</p>
+
+<ol>
+  <li>The OAuth credentials are invalid, and the failure app is called.</li>
+  <li>The OAuth credentials are valid, but no local user is associated with them; the failure app is called with <code>env["warden.options"][:oauth][:access_token]</code> available.</li>
+  <li>The OAuth credentials are valid, and the returned user is authenticated successfully.</li>
+</ol>
+
+<p>In Rails, do not define <code>:warden_oauth_provider</code> as part of the login route itself.<br>
+If Rails consumes that parameter before the request reaches the Warden Rack middleware, the OAuth strategy will not run.</p>
 
 <h2 id="-floss-funding">🦷 FLOSS Funding</h2>
 
@@ -512,7 +563,7 @@ Please consider sponsoring me or the project.</p>
 </div></div>
 
       <div id="footer">
-  Generated on Mon Jun 15 06:41:36 2026 by
+  Generated on Mon Jun 15 06:58:53 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.44 (ruby-4.0.5).
 </div>

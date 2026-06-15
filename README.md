@@ -118,7 +118,7 @@ use Warden::Manager do |config|
   config.oauth(:twitter) do |twitter|
     twitter.consumer_secret "YOUR CONSUMER SECRET"
     twitter.consumer_key "YOUR CONSUMER KEY"
-    twitter.options site: "http://twitter.com"
+    twitter.options :site => "http://twitter.com"
   end
 
   config.default_strategies(:twitter_oauth, :password, :other)
@@ -149,7 +149,7 @@ env["warden.options"][:oauth][:access_token]
 To start an OAuth flow, send the protected request with a `warden_oauth_provider` parameter matching the configured service name:
 
 ```ruby
-link_to "Twitter Authentication", url_for(login_path(warden_oauth_provider: "twitter"))
+link_to "Twitter Authentication", url_for(login_path(:warden_oauth_provider => "twitter"))
 ```
 
 The strategy has three outcomes:
