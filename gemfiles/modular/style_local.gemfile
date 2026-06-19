@@ -8,17 +8,17 @@
 
 require "nomono/bundler" unless defined?(Nomono)
 
-local_gems = ["rubocop-lts", "rubocop-lts-rspec", "rubocop-ruby1_8", "standard-rubocop-lts"]
+local_gems = %w[rubocop-lts rubocop-lts-rspec rubocop-ruby1_8 standard-rubocop-lts]
 
 # export VENDORED_GEMS=rubocop-lts,rubocop-lts-rspec,rubocop-ruby1_8,standard-rubocop-lts
 platform :mri do
   eval_nomono_gems(
-    :gems => local_gems,
-    :prefix => "RUBOCOP_LTS",
-    :path_env => "RUBOCOP_LTS_LOCAL",
-    :vendored_gems_env => "VENDORED_GEMS",
-    :vendor_gem_dir_env => "VENDOR_GEM_DIR",
-    :debug_env => "RUBOCOP_LTS_DEBUG",
-    :root => ["src", "rubocop-lts"]
+    gems: local_gems,
+    prefix: "RUBOCOP_LTS",
+    path_env: "RUBOCOP_LTS_LOCAL",
+    vendored_gems_env: "VENDORED_GEMS",
+    vendor_gem_dir_env: "VENDOR_GEM_DIR",
+    debug_env: "RUBOCOP_LTS_DEBUG",
+    root: ["src", "rubocop-lts"]
   )
 end
