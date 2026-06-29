@@ -1,9 +1,27 @@
+GIT
+  remote: https://github.com/kettle-dev/simplecov.git
+  revision: bc14cb6ef921e264332fd7b750bf6fb8916488c1
+  branch: fix-final-parallel-worker-formatting
+  specs:
+    simplecov (1.0.0.rc3)
+
 PATH
   remote: .
   specs:
     warden_oauth (0.1.2)
       oauth
       warden (>= 0.8.1)
+
+PATH
+  remote: /var/home/pboling/src/my/ruby-oauth/oauth
+  specs:
+    oauth (1.1.8)
+      anonymous_loader (~> 0.1, >= 0.1.2)
+      auth-sanitizer (~> 0.2, >= 0.2.2)
+      base64 (~> 0.1)
+      oauth-tty (~> 1.0, >= 1.0.12)
+      snaky_hash (~> 2.0, >= 2.0.5)
+      version_gem (~> 1.1, >= 1.1.13)
 
 GEM
   remote: https://gem.coop/
@@ -99,7 +117,7 @@ GEM
       kettle-test (~> 2.0, >= 2.0.4)
       ruby-progressbar (~> 1.13)
       version_gem (~> 1.1, >= 1.1.13)
-    kettle-rb (0.1.0)
+    kettle-rb (0.1.1)
     kettle-soup-cover (3.0.0.rc5)
       simplecov (>= 1.0.pre)
       simplecov-cobertura (>= 4.0.pre)
@@ -137,19 +155,11 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.19.4-x86_64-darwin)
-      racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-musl)
       racc (~> 1.4)
     nomono (1.0.6)
-    oauth (1.1.7)
-      auth-sanitizer (~> 0.2, >= 0.2.1)
-      base64 (~> 0.1)
-      oauth-tty (~> 1.0, >= 1.0.10)
-      snaky_hash (~> 2.0, >= 2.0.5)
-      version_gem (~> 1.1, >= 1.1.12)
     oauth-tty (1.0.12)
       anonymous_loader (~> 0.1, >= 0.1.1)
       auth-sanitizer (~> 0.2, >= 0.2.2)
@@ -313,7 +323,6 @@ GEM
     silent_stream (1.0.12)
       logger (~> 1.2)
       version_gem (>= 1.1.8, < 3)
-    simplecov (1.0.0.rc4)
     simplecov-cobertura (4.0.0.rc1)
       rexml
       simplecov (>= 1.0.0.rc2, < 2.0)
@@ -408,14 +417,14 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
-  x86_64-darwin
+  x86_64-linux
   x86_64-linux-gnu
   x86_64-linux-musl
 
 DEPENDENCIES
   addressable (>= 2.8, < 3)
-  appraisal2 (~> 3.1, >= 3.1.2)
-  appraisal2-rubocop (~> 0.2, >= 0.2.1)
+  appraisal2 (~> 3.1, >= 3.1.3)
+  appraisal2-rubocop (~> 0.2, >= 0.2.2)
   benchmark (~> 0.5, >= 0.5.0)
   bundler-audit (~> 0.9.3)
   cgi (~> 0.5)
@@ -423,15 +432,16 @@ DEPENDENCIES
   erb (~> 6.0, >= 6.0.4)
   fakeweb (~> 1.3, >= 1.3.0)
   gem_bench (~> 2.0, >= 2.0.5)
-  gitmoji-regex (~> 2.0, >= 2.0.2)
+  gitmoji-regex (~> 2.0, >= 2.0.3)
   irb (~> 1.17)
-  kettle-dev (~> 2.2, >= 2.2.13)
-  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc1)
-  kettle-test (~> 2.0, >= 2.0.5)
+  kettle-dev (~> 2.2, >= 2.2.24)
+  kettle-soup-cover (~> 3.0.a, >= 3.0.0.rc5)
+  kettle-test (~> 2.0, >= 2.0.8)
   kramdown (~> 2.5, >= 2.5.1)
   kramdown-parser-gfm (~> 1.1)
   mutex_m (~> 0.2)
-  nomono (~> 1.0, >= 1.0.4)
+  nomono (~> 1.0, >= 1.0.6)
+  oauth!
   rack-session
   rack-test (~> 2.2, >= 2.2.0)
   rake (~> 13.0)
@@ -441,26 +451,27 @@ DEPENDENCIES
   require_bench (~> 1.0, >= 1.0.4)
   rspec (~> 3.13, >= 3.13.2)
   rubocop-gradual (~> 0.4, >= 0.4.0)
-  rubocop-lts (~> 0.3, >= 0.3.0)
-  rubocop-lts-rspec (~> 1.0, >= 1.0.3)
+  rubocop-lts (~> 0.3, >= 0.3.1)
+  rubocop-lts-rspec (~> 1.0, >= 1.0.4)
   rubocop-minitest (~> 0.38, >= 0.38.1)
   rubocop-on-rbs (~> 2.0, >= 2.0.0)
   rubocop-packaging (~> 0.6, >= 0.6.0)
-  rubocop-ruby1_8 (~> 2.0, >= 2.0.2)
+  rubocop-ruby1_8 (~> 2.0, >= 2.0.5)
   ruby-progressbar (~> 1.13)
+  simplecov!
   standard (~> 1.54, >= 1.54.0)
-  stone_checksums (~> 1.0, >= 1.0.3)
+  stone_checksums (~> 1.0, >= 1.0.4)
   stringio (>= 3.0)
-  turbo_tests2 (~> 3.1, >= 3.1.4)
+  turbo_tests2 (~> 3.1, >= 3.1.5)
   warden_oauth!
   webrick (~> 1.9)
-  yaml-converter (~> 0.2, >= 0.2.1)
+  yaml-converter (~> 0.2, >= 0.2.2)
   yard (~> 0.9, >= 0.9.44)
-  yard-fence (~> 0.9, >= 0.9.4)
+  yard-fence (~> 0.9, >= 0.9.5)
   yard-junk (~> 0.1, >= 0.1.0)
   yard-relative_markdown_links (~> 0.6)
-  yard-timekeeper (~> 0.2, >= 0.2.1)
-  yard-yaml (~> 0.2, >= 0.2.1)
+  yard-timekeeper (~> 0.2, >= 0.2.2)
+  yard-yaml (~> 0.2, >= 0.2.2)
 
 CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
@@ -503,7 +514,7 @@ CHECKSUMS
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   json (2.20.0) sha256=9362bc6e55a952b056abf9167cf053358181c904cb70cd6eee0808ea830fc32b
   kettle-dev (2.2.24) sha256=572e150530ce39c01c4e11032be9e9ae2b4634d2922a0b0ee821c17ebc49925f
-  kettle-rb (0.1.0) sha256=b6b0b6e15fb42a897ef7208e28fe30b3b98be06d09f4512a6728bc71d0817320
+  kettle-rb (0.1.1) sha256=2e793d817f5150339770c547a2c72ed0c1a23b5e5a3ef46f462500dcb10dec4d
   kettle-soup-cover (3.0.0.rc5) sha256=3c8e5551a1c900fb95503d69f815205a1138f168500acdd4559c3a5ef1817da5
   kettle-test (2.0.8) sha256=1b404fa8a6bfcb3456b6d222b1b31a39122fc3e713abc0fdc58db873a61de575
   kramdown (2.5.2) sha256=1ba542204c66b6f9111ff00dcc26075b95b220b07f2905d8261740c82f7f02fa
@@ -517,11 +528,10 @@ CHECKSUMS
   nokogiri (1.19.4-arm-linux-gnu) sha256=a301313e38bb065d68239e79734bcd6f56fb6efaacebde29e9abf2a4735340ca
   nokogiri (1.19.4-arm-linux-musl) sha256=588923c101bcfa78869734d247d25b598674323e7f22474fc468f6e5647311eb
   nokogiri (1.19.4-arm64-darwin) sha256=a46db9853286e6597b36ebc6953817d15acf3a299583eb3f89fdc6f91dd63527
-  nokogiri (1.19.4-x86_64-darwin) sha256=7fd17057d3e1f00e9954a74b3cd76595d3d4a5ef233b7ed9599047c204f70551
   nokogiri (1.19.4-x86_64-linux-gnu) sha256=379fae440b28915e3f19d752ce2dcf8465ed2b2fbefd2a7ca0dd497bc981a06a
   nokogiri (1.19.4-x86_64-linux-musl) sha256=17dfb7c1fa194ae02fbf7c51a7afc8d278045ab3fdacfd86f91d02d7b274470b
   nomono (1.0.6) sha256=93f9f5e113f641f942e84755c1e7b9bd6d375fa31ed6205da1b9ad0276b9b3a0
-  oauth (1.1.7) sha256=a8cd8a96b8b90d738714da628b5f4a36565e278d1d28d82def3b3664bd71f069
+  oauth (1.1.8)
   oauth-tty (1.0.12) sha256=6202c48a79cd9cc09bc82b951b934274db21519d5ab1ba7e3502d44679943d4b
   openssl (4.0.2) sha256=1037ad2868ae58df9ad917891c0c0f9815a1172f6846d4bcdd508e4c2ee747c2
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
@@ -578,7 +588,7 @@ CHECKSUMS
   ruby_engine (2.0.3) sha256=ca2ae7def8cfcdc2bfb6a186d36d5d59c8b403245dc0256c3802b767fa278aaa
   ruby_version (1.0.3) sha256=5930f9950746b7e6c973184398ee364ee7440b170fef7922b9f5cdf317f1ccb5
   silent_stream (1.0.12) sha256=377c43aa10033fe90c33b39ea8cd97d79f2d1c4856df598efc56f3091f3ae782
-  simplecov (1.0.0.rc4) sha256=5c74e75a12a729d908a553c113af13bf6b68401272618d85ee808e21f0fd8e2b
+  simplecov (1.0.0.rc3)
   simplecov-cobertura (4.0.0.rc1) sha256=1de000b112889f5c2d4d4627d00fb27fa0c77de5b2a7a46d9c230c2408de2c11
   simplecov-console (0.9.5) sha256=b1108bcfff5f210143e2b8301698c367b01586f20d25a73e95475a5df6fc6ff6
   simplecov-rcov (0.3.7) sha256=372f50bf6df6b6350b7d0c840f2f8bdabe021861a43c26877b747c9ac96139fc
