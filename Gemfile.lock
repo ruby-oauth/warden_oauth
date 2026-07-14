@@ -14,7 +14,7 @@ PATH
       base64 (~> 0.1)
       oauth-tty (~> 1.0, >= 1.0.12)
       snaky_hash (~> 2.0, >= 2.0.5)
-      version_gem (~> 1.1, >= 1.1.13)
+      version_gem (~> 1.1, >= 1.1.14)
 
 GEM
   remote: https://gem.coop/
@@ -104,7 +104,7 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.21.1)
-    kettle-dev (2.3.2)
+    kettle-dev (2.3.3)
       emoji_regex (>= 15.0)
       kettle-rb (~> 0.1, >= 0.1.1)
       kettle-test (~> 2.0, >= 2.0.4)
@@ -372,7 +372,7 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.2.0)
-    version_gem (1.1.13)
+    version_gem (1.1.14)
     warden (1.2.9)
       rack (>= 2.0.9)
     webrick (1.9.2)
@@ -426,7 +426,7 @@ DEPENDENCIES
   gem_bench (~> 2.0, >= 2.0.5)
   gitmoji-regex (~> 2.0, >= 2.0.4)
   irb (~> 1.17)
-  kettle-dev (~> 2.3, >= 2.3.2)
+  kettle-dev (~> 2.3, >= 2.3.3)
   kettle-soup-cover (~> 3.0, >= 3.0.0)
   kettle-test (~> 2.0, >= 2.0.10)
   kramdown (~> 2.5, >= 2.5.1)
@@ -504,7 +504,7 @@ CHECKSUMS
   io-console (0.8.2) sha256=d6e3ae7a7cc7574f4b8893b4fca2162e57a825b223a177b7afa236c5ef9814cc
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   json (2.21.1) sha256=13a43df75d95641443f5702dff350f237164a9d811ff0f2c2800d4d980220583
-  kettle-dev (2.3.2) sha256=a908dd256616887336f8a08cf6ed069ae41248b55b0bc1a60b8a340c89d7ac22
+  kettle-dev (2.3.3) sha256=91916cbe969ceb6e51a9395f5b36a641a2bc456184de7737af65cfc1aca156a2
   kettle-rb (0.1.1) sha256=2e793d817f5150339770c547a2c72ed0c1a23b5e5a3ef46f462500dcb10dec4d
   kettle-soup-cover (3.0.0) sha256=4d3ed6c714cb88cf148f65934c6a96c976b2281abb3ae443ad0ddf6ac0da875b
   kettle-test (2.0.10) sha256=1708800fe093e724b8d1f0673a92da2a05dfe6314aee6d49dfeecd4985321ac8
@@ -601,7 +601,7 @@ CHECKSUMS
   turbo_tests2 (3.1.7) sha256=1f0a476efb5c2949561dd5caa59e829c9a3af77a07163fdf6ea9207cd511b765
   unicode-display_width (3.2.0) sha256=0cdd96b5681a5949cdbc2c55e7b420facae74c4aaf9a9815eee1087cb1853c42
   unicode-emoji (4.2.0) sha256=519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f
-  version_gem (1.1.13) sha256=77f3035ac45877cd14610648fec2d23bd8c10fa13dfcf63a588825aa98587260
+  version_gem (1.1.14) sha256=6b7306c7e9416d06067561981ab3444e2cecb844f26cc325ae3c27b44cf85613
   warden (1.2.9) sha256=46684f885d35a69dbb883deabf85a222c8e427a957804719e143005df7a1efd0
   warden_oauth (0.1.3)
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
