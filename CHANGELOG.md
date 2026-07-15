@@ -20,11 +20,7 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Added
 
-- Added support for JRuby 10.1 and TruffleRuby 34.0.
-
 ### Changed
-
-- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
 
 ### Deprecated
 
@@ -32,9 +28,26 @@ Please file a bug if you notice a violation of semantic versioning.
 
 ### Fixed
 
-- Package configured license files in gem release file lists.
-
 ### Security
+
+## [0.1.3] - 2026-07-15
+
+- TAG: [v0.1.3][0.1.3t]
+- COVERAGE: 96.84% -- 153/158 lines in 9 files
+- BRANCH COVERAGE: 80.56% -- 29/36 branches in 9 files
+- 53.12% documented
+
+### Added
+
+- Added support for JRuby 10.1 and TruffleRuby 34.0.
+
+### Changed
+
+- Retemplated project metadata and CI/development automation with `kettle-jem` v7.0.0.
+
+### Fixed
+
+- Package configured license files in gem release file lists.
 
 ## [0.1.2] - 2026-06-15
 
@@ -90,6 +103,8 @@ Please file a bug if you notice a violation of semantic versioning.
 - Fixed test compatibility with modern Ruby by shimming `File.exists?` for
   `fakeweb` during specs.
 
-[Unreleased]: https://github.com/ruby-oauth/warden_oauth/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/ruby-oauth/warden_oauth/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/ruby-oauth/warden_oauth/compare/v0.1.2...v0.1.3
+[0.1.3t]: https://github.com/ruby-oauth/warden_oauth/releases/tag/v0.1.3
 [0.1.2]: https://github.com/ruby-oauth/warden_oauth/compare/a38e5c5fb3d44936b48bb5e547ec7dd7f58530a3...v0.1.2
 [0.1.2t]: https://github.com/ruby-oauth/warden_oauth/releases/tag/v0.1.2
