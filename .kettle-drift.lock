@@ -1,11 +1,20 @@
 {
+  ":vendored_gems_env => \"VENDORED_GEMS\",\n:vendor_gem_dir_env => \"VENDOR_GEM_DIR\",": [
+    {
+      "file": "gemfiles/modular/templating_local.gemfile",
+      "lines": [
+        71,
+        82
+      ]
+    }
+  ],
   "appraisal: \"dep-heads\"\nexec_cmd: \"kettle-test\"": [
     {
       "file": ".github/workflows/dep-heads.yml",
       "lines": [
-        44,
-        105,
-        159
+        43,
+        100,
+        157
       ]
     }
   ],
@@ -16,6 +25,16 @@
         43,
         104,
         162
+      ]
+    }
+  ],
+  "exec_cmd: \"kettle-test\"\n# Run directly from the generated appraisal Gemfile so setup-ruby": [
+    {
+      "file": ".github/workflows/dep-heads.yml",
+      "lines": [
+        44,
+        101,
+        158
       ]
     }
   ],
