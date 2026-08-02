@@ -1,8 +1,7 @@
-require_relative "warden_oauth/version"
-
 require "rack"
 require "warden"
 require "oauth"
+require_relative "warden_oauth/version"
 
 module Warden
   module OAuth

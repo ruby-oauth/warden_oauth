@@ -313,17 +313,17 @@ machine_users:
 # Divergence is currently measured as the percent of produced files that would
 # change or be added during templating (100 - unchanged-file score).
 # ENV override: KJ_MIN_DIVERGENCE_THRESHOLD
-min_divergence_threshold: 
+min_divergence_threshold: ""
 
 # Hostname used for generated YARD documentation links.
 # Defaults to <gem-name>.<author-email-domain>.
 # ENV override: KJ_YARD_HOST
-yard_host: "warden_oauth.galtzo.com"
+yard_host: "warden-oauth.galtzo.com"
 
 # Full URL used for gemspec metadata["homepage_uri"].
 # Defaults to https://warden_oauth.galtzo.com.
 # ENV override: KJ_HOMEPAGE_URI
-homepage_uri: "https://warden_oauth.galtzo.com"
+homepage_uri: "https://warden-oauth.galtzo.com"
 
 # Template source inventory.
 # The packaged inventory is the canonical kettle-jem project template. It
