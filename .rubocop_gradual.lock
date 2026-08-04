@@ -1,4 +1,7 @@
 {
+  "gemfiles/modular/templating.gemfile:3520099156": [
+    [14, 3, 50, "Bundler/DuplicatedGem: Gem `tree_sitter_language_pack` requirements already given on line 10 of the Gemfile.", 1000260798]
+  ],
   "lib/warden_oauth/strategy.rb:2178461735": [
     [15, 10, 20, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 3913752241]
   ],
