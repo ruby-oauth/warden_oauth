@@ -2,7 +2,7 @@
 version: 1
 template_state:
   version: 7.1.0
-  applied_at: '2026-08-04'
+  applied_at: '2026-08-05'
   changelog_replay:
     last_entry_key: kettle-jem-template-20260802-001
     last_entry_date: '2026-08-02'
@@ -1098,7 +1098,7 @@ files:
     recipe: template_source_application_lib_warden_oauth_version_rb
     action: write
     dest_sha256: 2530d5146f13bde7dc6c10822898cf460f9e488d84eb8c269bc187929bc81e07
-    input_fingerprint: 057b66877139a5f96107ca111391fe959f0417e45f834522b5e9bdadddfcb5c4
+    input_fingerprint: b8526e988506e28070c64827c07800146ae45b4a6746bd1fdfbf2d42d2856ecc
     template_sources:
     - lib/gem/version.rb.example
   mise.toml:
@@ -1140,6 +1140,6 @@ files:
     recipe: template_source_application_warden_oauth_gemspec
     action: write
     dest_sha256: eb88a98ce960eff466c6bbd8f5c636c0d8399ef0ad019b5583cec0fc6b088695
-    input_fingerprint: 6029df99af7618b7492257b1420be4e5c170e188d0f30567b7d7eca9c5bcac42
+    input_fingerprint: 672ba1d84436538c73617a92f796790f6a020b2813434456aeff0ac67e70b4ed
     template_sources:
     - gem.gemspec.example
