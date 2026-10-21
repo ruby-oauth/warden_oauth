@@ -1,10 +1,28 @@
 {
-  ":vendored_gems_env => \"VENDORED_GEMS\",\n:vendor_gem_dir_env => \"VENDOR_GEM_DIR\",": [
+  "- ruby: \"ruby\"\nappraisal: \"current\"": [
     {
-      "file": "gemfiles/modular/templating_local.gemfile",
+      "file": ".github/workflows/current.yml",
       "lines": [
-        78,
-        89
+        41,
+        47
+      ]
+    }
+  ],
+  "config: .licenserc.yaml\nmode: \"check\"": [
+    {
+      "file": ".github/workflows/license-eye.yml",
+      "lines": [
+        49,
+        62
+      ]
+    }
+  ],
+  "exec_cmd: \"kettle-test\"\nrubygems: latest": [
+    {
+      "file": ".github/workflows/current.yml",
+      "lines": [
+        44,
+        50
       ]
     }
   ]
