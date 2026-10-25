@@ -14,54 +14,13 @@ PATH
       oauth (>= 1.1.8)
       warden (>= 0.8.1)
 
-PATH
-  remote: /var/home/pboling/src/my/ruby-oauth/anonymous_loader
-  specs:
-    anonymous_loader (0.1.4)
-      version_gem (~> 1.1, >= 1.1.15)
-
-PATH
-  remote: /var/home/pboling/src/my/ruby-oauth/auth-sanitizer
-  specs:
-    auth-sanitizer (0.2.4)
-      version_gem (~> 1.1, >= 1.1.16)
-
-PATH
-  remote: /var/home/pboling/src/my/ruby-oauth/oauth-tty
-  specs:
-    oauth-tty (1.0.14)
-      anonymous_loader (~> 0.1, >= 0.1.4)
-      auth-sanitizer (~> 0.2, >= 0.2.4)
-      version_gem (~> 1.1, >= 1.1.16)
-
-PATH
-  remote: /var/home/pboling/src/my/ruby-oauth/oauth
-  specs:
-    oauth (1.1.9)
-      anonymous_loader (~> 0.1, >= 0.1.4)
-      auth-sanitizer (~> 0.2, >= 0.2.4)
-      base64 (~> 0.1)
-      oauth-tty (~> 1.0, >= 1.0.13)
-      snaky_hash (~> 2.0, >= 2.0.8)
-      version_gem (~> 1.1, >= 1.1.16)
-
-PATH
-  remote: /var/home/pboling/src/my/ruby-oauth/snaky_hash
-  specs:
-    snaky_hash (2.0.8)
-      hashie (>= 0.1.0, < 6)
-      version_gem (~> 1.1, >= 1.1.16)
-
-PATH
-  remote: /var/home/pboling/src/my/ruby-oauth/version_gem
-  specs:
-    version_gem (1.1.16)
-
 GEM
   remote: https://gem.coop/
   specs:
     addressable (2.9.0)
       public_suffix (>= 2.0.2, < 8.0)
+    anonymous_loader (0.1.4)
+      version_gem (~> 1.1, >= 1.1.15)
     ansi (1.6.0)
     appraisal2 (3.2.6)
       bundler (>= 1.17.3)
@@ -99,6 +58,8 @@ GEM
       ast-merge (= 7.1.16)
       token-resolver (~> 2.0, >= 2.0.10)
       version_gem (~> 1.1, >= 1.1.15)
+    auth-sanitizer (0.2.4)
+      version_gem (~> 1.1, >= 1.1.16)
     backports (3.25.3)
     base64 (0.3.0)
     bash-merge (7.1.16)
@@ -319,8 +280,19 @@ GEM
       racc (~> 1.4)
     nokogiri (1.19.4-x86_64-linux-musl)
       racc (~> 1.4)
-    nomono (1.1.14)
-      version_gem (~> 1.1, >= 1.1.15)
+    nomono (1.1.15)
+      version_gem (~> 1.1, >= 1.1.16)
+    oauth (1.1.8)
+      anonymous_loader (~> 0.1, >= 0.1.3)
+      auth-sanitizer (~> 0.2, >= 0.2.3)
+      base64 (~> 0.1)
+      oauth-tty (~> 1.0, >= 1.0.13)
+      snaky_hash (~> 2.0, >= 2.0.7)
+      version_gem (~> 1.1, >= 1.1.14)
+    oauth-tty (1.0.13)
+      anonymous_loader (~> 0.1, >= 0.1.3)
+      auth-sanitizer (~> 0.2, >= 0.2.3)
+      version_gem (~> 1.1, >= 1.1.14)
     openssl (4.0.2)
     ostruct (0.6.3)
     parallel (1.28.0)
@@ -521,6 +493,9 @@ GEM
       simplecov (>= 0.4.1)
     simplecov_lcov_formatter (0.9.0)
       simplecov (>= 0.18)
+    snaky_hash (2.0.8)
+      hashie (>= 0.1.0, < 6)
+      version_gem (~> 1.1, >= 1.1.16)
     sorbet-runtime (0.6.13591)
     standard (1.57.0)
       language_server-protocol (~> 3.17.0.2)
@@ -596,6 +571,7 @@ GEM
       runtime_groups (~> 0.1, >= 0.1.3)
       version_gem (~> 1.1, >= 1.1.15)
     unicode-display_width (2.6.0)
+    version_gem (1.1.16)
     warden (1.2.9)
       rack (>= 2.0.9)
     webrick (1.9.2)
@@ -644,10 +620,9 @@ PLATFORMS
 
 DEPENDENCIES
   addressable (>= 2.8, < 3)
-  anonymous_loader (~> 0.1, >= 0.1.3)!
+  anonymous_loader (~> 0.1, >= 0.1.3)
   appraisal2 (~> 3.2, >= 3.2.6)
   appraisal2-rubocop (~> 1.0, >= 1.0.5)
-  auth-sanitizer!
   benchmark (~> 0.5, >= 0.5.0)
   bundler-audit (~> 0.9.3)
   cgi (~> 0.5)
@@ -665,9 +640,7 @@ DEPENDENCIES
   kramdown (~> 2.5, >= 2.5.2)
   kramdown-parser-gfm (~> 1.1)
   mutex_m (~> 0.2)
-  nomono (~> 1.1, >= 1.1.14)
-  oauth (>= 1.1.8)!
-  oauth-tty!
+  nomono (~> 1.1, >= 1.1.15)
   ostruct (~> 0.6)
   rack-session
   rack-test (~> 2.2, >= 2.2.0)
@@ -684,12 +657,10 @@ DEPENDENCIES
   rubocop-packaging!
   rubocop-ruby1_8 (~> 2.0, >= 2.0.7)
   ruby-progressbar (~> 1.13)
-  snaky_hash!
   standard (~> 1.57, >= 1.57.0)
   stone_checksums (~> 1.0, >= 1.0.9)
   stringio (>= 3.0)
   turbo_tests2 (~> 4.0, >= 4.0.0)
-  version_gem!
   warden_oauth!
   webrick (~> 1.9)
   yaml-converter (~> 0.2, >= 0.2.7)
@@ -703,7 +674,7 @@ DEPENDENCIES
 
 CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
-  anonymous_loader (0.1.4)
+  anonymous_loader (0.1.4) sha256=ebccdc13b23ccbe24c616e7bef8f4c5d4d09622097781107bfbdbb4c5ae0504b
   ansi (1.6.0) sha256=ac9ea0c0ea8d32fb4e271348e609963ac78882f34b73836c2a02b3622e666658
   appraisal2 (3.2.6) sha256=6664d2404b9fe160dfbbed4dd9b78e7b9146402bc3468ff92ba78c1878bc318a
   appraisal2-rubocop (1.0.5) sha256=91db38e8585dc2b07491eee6c288764511a6c6a0a5d06c339c91ab6a4164bea8
@@ -714,7 +685,7 @@ CHECKSUMS
   ast-crispr-toml (7.1.16) sha256=057cd645807619cb7dbe60d84725889dcdecc0437e941b1f0bdfbe880f53f5d4
   ast-merge (7.1.16) sha256=3973f1f7efd5979bccc6bade5cb4da92c88a8ac78a951c18b1e9bc5ac212eeee
   ast-template (7.1.16) sha256=24cca8f82b4ddd69be1cdd1714b9241951bc597eb1667a84d6cba272c2905828
-  auth-sanitizer (0.2.4)
+  auth-sanitizer (0.2.4) sha256=12413515e0c5bfe9809d0ea103f3bc6d066750aa0b843cc12b704c3f8fe94ef0
   backports (3.25.3) sha256=94298d32dc3c40ca15633b54e282780b49e2db0c045f602ea1907e4f63a17235
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   bash-merge (7.1.16) sha256=23fbb68d954a55b645b14e97aa2c12fef89a8db1defb4409284c3bf0f2e00883
@@ -784,9 +755,9 @@ CHECKSUMS
   nokogiri (1.19.4-arm64-darwin) sha256=a46db9853286e6597b36ebc6953817d15acf3a299583eb3f89fdc6f91dd63527
   nokogiri (1.19.4-x86_64-linux-gnu) sha256=379fae440b28915e3f19d752ce2dcf8465ed2b2fbefd2a7ca0dd497bc981a06a
   nokogiri (1.19.4-x86_64-linux-musl) sha256=17dfb7c1fa194ae02fbf7c51a7afc8d278045ab3fdacfd86f91d02d7b274470b
-  nomono (1.1.14) sha256=dd9465103202803a1b25046be9cb873b8ca8291647b59fab751306098b6131f6
-  oauth (1.1.9)
-  oauth-tty (1.0.14)
+  nomono (1.1.15) sha256=a2ad25ea5a90fc1924f5e943348553ae387b940d23b1bf4119be9591e7887d7a
+  oauth (1.1.8) sha256=7bf0b774391af4f820a86ce2cc7fa38c3fad5121b5563592535cff4b2e16d50e
+  oauth-tty (1.0.13) sha256=71ad5f93ceea6fd21fe9a731dc02a4b892c5de9d77e0b303e81bd73f9daeb4a3
   openssl (4.0.2) sha256=1037ad2868ae58df9ad917891c0c0f9815a1172f6846d4bcdd508e4c2ee747c2
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
   parallel (1.28.0) sha256=33e6de1484baf2524792d178b0913fc8eb94c628d6cfe45599ad4458c638c970
@@ -857,7 +828,7 @@ CHECKSUMS
   simplecov-console (0.9.5) sha256=b1108bcfff5f210143e2b8301698c367b01586f20d25a73e95475a5df6fc6ff6
   simplecov-rcov (0.3.7) sha256=372f50bf6df6b6350b7d0c840f2f8bdabe021861a43c26877b747c9ac96139fc
   simplecov_lcov_formatter (0.9.0) sha256=4c1839bb31dcf7a8f7a6474c94ed228aa03b994e9dd5e1965e58b4121b049bed
-  snaky_hash (2.0.8)
+  snaky_hash (2.0.8) sha256=309f8b9874d00e72c415747d90ab746f2718b19157da48788c798de3eb3bc2a2
   sorbet-runtime (0.6.13591) sha256=ef9d316efe9e63fd149b83c86d647891298124ff54c5783494c5990dde5445a6
   standard (1.57.0) sha256=4a65ea92421fbaf77fb54da91e16093cf79b335b8f62c35aaa3dd714c8592858
   standard-custom (1.0.2) sha256=424adc84179a074f1a2a309bb9cf7cd6bfdb2b6541f20c6bf9436c0ba22a652b
@@ -886,7 +857,7 @@ CHECKSUMS
   tty-screen (0.8.2) sha256=c090652115beae764336c28802d633f204fb84da93c6a968aa5d8e319e819b50
   turbo_tests2 (4.0.0) sha256=a01c2e29eeca973946bcca8fed10366ffad34622b9fa85d4cb8ebf14f429aebd
   unicode-display_width (2.6.0) sha256=12279874bba6d5e4d2728cef814b19197dbb10d7a7837a869bab65da943b7f5a
-  version_gem (1.1.16)
+  version_gem (1.1.16) sha256=8cdfb3d7d47419a434935f60c9d7090558cf6baffe277d41ca6e2e49fa7c22c7
   warden (1.2.9) sha256=46684f885d35a69dbb883deabf85a222c8e427a957804719e143005df7a1efd0
   warden_oauth (0.1.4)
   webrick (1.9.2) sha256=beb4a15fc474defed24a3bda4ffd88a490d517c9e4e6118c3edce59e45864131
