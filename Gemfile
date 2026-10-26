@@ -18,10 +18,10 @@ git_source(:gitlab) { |repo_name| "https://gitlab.com/#{repo_name}" }
 # Include dependencies from warden_oauth.gemspec
 gemspec
 
-gem "kettle-family", "~> 1.3", ">= 1.3.33"
+gem "kettle-family", "~> 1.3", ">= 1.3.34"
 
 # Local workspace dependency wiring for *_local.gemfile overrides
-gem "nomono", "~> 1.1", ">= 1.1.15", :require => false # ruby >= 3.2.0
+gem "nomono", "~> 1.1", ">= 1.1.16", :require => false # ruby >= 3.2.0
 
 # Direct sibling dependencies (env-switched via RUBY_OAUTH_DEV)
 direct_sibling_gems = [
@@ -82,7 +82,7 @@ if direct_sibling_gems.any? &&
 
     eval_nomono_gems(
       :gems => direct_sibling_gems,
-      :requirements => {"oauth" => [">= 1.1.8"], "anonymous_loader" => ["~> 0.1", ">= 0.1.4"]},
+      :requirements => {"oauth" => [">= 1.1.8"], "anonymous_loader" => ["~> 0.1", ">= 0.1.5"]},
       :prefix => "RUBY_OAUTH",
       :path_env => "RUBY_OAUTH_DEV",
       :root => ["src", "my", "ruby-oauth"]
